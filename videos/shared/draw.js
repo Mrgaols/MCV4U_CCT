@@ -300,6 +300,37 @@
     ctx.restore();
   }
 
-  const api = { clamp, lerp, logLerp, ease, easeOut, fontString, measure, text, wrap, roundRect, card, pill, arrow, check, cross, frac, steps, heading, sky, lens };
+  // Run fn with everything it draws faded to alpha a.
+  function fade(ctx, a, fn) {
+    if (a <= 0.001) return;
+    ctx.save();
+    ctx.globalAlpha *= clamp(a);
+    fn();
+    ctx.restore();
+  }
+
+  // Move through a list of values: each step moves during the first `move` part
+  // of its share of p (0..1), then holds so the viewer can read the number.
+  // Values with the same sign move on a log scale (2 → 0.01 looks even).
+  function stepped(values, p, move = 0.55) {
+    const n = values.length - 1;
+    const i = Math.min(Math.floor(clamp(p) * n), n - 1);
+    const q = clamp((clamp(p) * n - i) / move);
+    const a = values[i];
+    const b = values[i + 1];
+    const e = ease(q);
+    const value = a * b > 0 ? Math.sign(a) * logLerp(Math.abs(a), Math.abs(b), e) : lerp(a, b, e);
+    return { i, value, settled: q >= 1 ? i + 1 : i };
+  }
+
+  // Same idea on a linear scale, for positions such as a hiker walking between stations.
+  function stations(values, p, move = 0.6) {
+    const n = values.length - 1;
+    const i = Math.min(Math.floor(clamp(p) * n), n - 1);
+    const q = clamp((clamp(p) * n - i) / move);
+    return { value: lerp(values[i], values[i + 1], ease(q)), settled: q >= 1 ? i + 1 : i };
+  }
+
+  const api = { clamp, lerp, logLerp, ease, easeOut, fade, stepped, stations, fontString, measure, text, wrap, roundRect, card, pill, arrow, check, cross, frac, steps, heading, sky, lens };
   root.CCT.draw = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

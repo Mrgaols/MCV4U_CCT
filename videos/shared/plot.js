@@ -205,7 +205,14 @@
     }
   }
 
-  const api = { Plot, fmt, fmtTrim };
+  // A white card with a plot inside it. The extra 40 px on the left and 30 px at
+  // the bottom leave room for the tick labels.
+  function plotCard(ctx, box, win, pad = 36) {
+    root.CCT.draw.card(ctx, box.x, box.y, box.w, box.h);
+    return new Plot({ x: box.x + pad + 40, y: box.y + pad, w: box.w - pad * 2 - 40, h: box.h - pad * 2 - 30 }, win);
+  }
+
+  const api = { Plot, fmt, fmtTrim, plotCard };
   root.CCT = root.CCT || {};
   Object.assign(root.CCT, api);
   if (typeof module === 'object' && module.exports) module.exports = api;

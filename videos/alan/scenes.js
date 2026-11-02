@@ -6,40 +6,11 @@
 (function (root) {
   'use strict';
 
-  const { draw: D, theme, Plot, fmt, fmtTrim } = root.CCT;
+  const { draw: D, theme, Plot, fmt, fmtTrim, plotCard } = root.CCT;
   const M = root.AlanMath;
   const C = theme.color;
   const L = theme.stage.left;
-  const R = theme.stage.right;
-  const { ease, lerp, logLerp, clamp } = D;
-
-  // Run fn with everything it draws faded to alpha a.
-  function fade(ctx, a, fn) {
-    if (a <= 0.001) return;
-    ctx.save();
-    ctx.globalAlpha *= clamp(a);
-    fn();
-    ctx.restore();
-  }
-
-  // A white card with a plot inside it, inset by pad pixels.
-  function plotCard(ctx, box, win, pad = 36) {
-    D.card(ctx, box.x, box.y, box.w, box.h);
-    return new Plot({ x: box.x + pad + 40, y: box.y + pad, w: box.w - pad * 2 - 40, h: box.h - pad * 2 - 30 }, win);
-  }
-
-  // Step through a list of values: each step moves during the first `move` part of
-  // its share of the beat, then holds so the viewer can read the number.
-  function stepped(values, p, move = 0.55) {
-    const n = values.length - 1;
-    const i = Math.min(Math.floor(p * n), n - 1);
-    const q = clamp((p * n - i) / move);
-    return { i, value: logLerpSigned(values[i], values[i + 1], ease(q)), settled: q >= 1 ? i + 1 : i };
-  }
-  function logLerpSigned(a, b, p) {
-    if (a * b > 0) return Math.sign(a) * logLerp(Math.abs(a), Math.abs(b), p);
-    return lerp(a, b, p);
-  }
+  const { ease, lerp, logLerp, clamp, fade, stepped } = D;
 
   const scenes = {};
 
