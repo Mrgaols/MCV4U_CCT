@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan: Differentiability and Motion</title>
+  <link rel="stylesheet" href="../shared/player.css">
+</head>
+<body>
+  <main id="app"></main>
+
+  <!-- Plain scripts (not modules) so the page also works when opened by double-click. -->
+  <script src="../shared/theme.js"></script>
+  <script src="../shared/timeline.js"></script>
+  <script src="../shared/draw.js"></script>
+  <script src="../shared/plot.js"></script>
+  <script src="../shared/engine.js"></script>
+  <script src="math.js"></script>
+  <script src="scenes.js"></script>
+  <script src="timing.js"></script>
+  <script>
+    CCT.createPlayer({
+      title: 'Alan: Differentiability and Motion',
+      header: 'MCV4U · Topic C · Alan: Differentiability and Motion',
+      scenes: AlanScenes,
+      timing: AlanTiming,
+      mount: document.getElementById('app'),
+    });
+  </script>
+</body>
+</html>
