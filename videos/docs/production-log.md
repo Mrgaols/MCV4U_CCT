@@ -80,7 +80,12 @@ This is a record of what was actually done and tested. Every entry here was done
 
 See the "Export results" section below. It is filled in from the actual export run.
 
-## 5. Not tested
+## 5. Sharing
+
+- The user asked for the `animations` branch to be pushed to GitHub for review, and it was pushed to the private repository.
+- It was **not** merged into `main`, and the site is not deployed.
+
+## 6. Not tested
 
 - Safari, Firefox, Windows, and phones. Only Chrome on this Mac was used.
 - Full-screen mode (F) and the H key. They are simple browser calls, but they were not exercised.

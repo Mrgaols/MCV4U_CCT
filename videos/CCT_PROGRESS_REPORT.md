@@ -1,7 +1,7 @@
 # CCT progress report: animated video lessons
 
 **Updated:** 2026-11-02, by Claude Code
-**Branch:** `animations` (local only, not pushed, not merged)
+**Branch:** `animations`. Pushed to GitHub (private repo) for review on 2026-11-02, at the user's request. **Not merged into `main`.** The MP4 previews are not in the repository; they are on the Mac that made them.
 **Due:** Sunday 2026-11-15, 23:59 (site link + PDF), plus a class presentation
 
 This report keeps four states apart:
