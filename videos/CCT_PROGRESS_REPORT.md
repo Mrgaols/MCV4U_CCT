@@ -1,7 +1,7 @@
 # CCT progress report: animated video lessons
 
 **Updated:** 2026-11-02, by Claude Code
-**Branch:** `animations`. Pushed to GitHub (private repo) for review on 2026-11-02, at the user's request. **Not merged into `main`.** The MP4 previews are not in the repository; they are on the Mac that made them.
+**Branch:** `main`. The work was built on a separate `animations` branch and merged into `main` on 2026-11-02 through PR #2 (merge commit cf05c5d), at the user's request. The `animations` branch was then deleted. The MP4 previews are not in the repository; they are on the Mac that made them.
 **Due:** Sunday 2026-11-15, 23:59 (site link + PDF), plus a class presentation
 
 This report keeps four states apart:
@@ -44,7 +44,6 @@ Real work that is not done yet.
 | Export the final PDF of the site after the videos are added; check all 43 solutions print | Students | Chrome → Print → Save as PDF |
 | Class presentation | Alan and Jeff | — |
 | Teacher conference / progress check | Alan and Jeff | Required by the rubric (per `CLAUDE.md`) |
-| Merge `animations` into `main` | Students to decide | Not needed for the site to work. Only merge after you review it. |
 
 ## Pending review
 

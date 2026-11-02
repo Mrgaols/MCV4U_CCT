@@ -82,8 +82,9 @@ See the "Export results" section below. It is filled in from the actual export r
 
 ## 5. Sharing
 
-- The user asked for the `animations` branch to be pushed to GitHub for review, and it was pushed to the private repository.
-- It was **not** merged into `main`, and the site is not deployed.
+- The user asked for the `animations` branch to be pushed to GitHub for review, and it was pushed to the private repository. Pull request #2 was opened.
+- The user then asked for everything to go into `main`. PR #2 was merged on 2026-11-02 (merge commit cf05c5d), and the `animations` branch was deleted.
+- `index.html` was not changed by the merge, and the site is not deployed (GitHub Pages is off).
 
 ## 6. Not tested
 
