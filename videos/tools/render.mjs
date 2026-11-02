@@ -10,7 +10,7 @@
 // read the canvas back. Because every scene is a pure function of t, frame n is
 // always t = n / fps; nothing depends on how fast this machine is.
 import { spawn, execFileSync } from 'node:child_process';
-import { mkdtempSync, mkdirSync, writeFileSync, existsSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, existsSync, rmSync, statSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -124,9 +124,10 @@ try {
     const to = Math.min(Number(opt('to', lesson.duration)), lesson.duration);
     const out = resolve(opt('video'));
     mkdirSync(dirname(out), { recursive: true });
+    // Compile the encoder once, and again whenever encode.swift is edited.
     const bin = join(tmpdir(), 'cct-encode');
     const src = join(here, 'encode.swift');
-    if (!existsSync(bin)) execFileSync('swiftc', ['-O', src, '-o', bin], { stdio: 'inherit' });
+    if (!existsSync(bin) || statSync(src).mtimeMs > statSync(bin).mtimeMs) execFileSync('swiftc', ['-O', src, '-o', bin], { stdio: 'inherit' });
     const enc = spawn(bin, [out, String(fps), '1920', '1080'], { stdio: ['pipe', 'inherit', 'inherit'] });
     const done = new Promise((ok, fail) => enc.on('exit', (code) => (code === 0 ? ok() : fail(new Error('encoder exited with ' + code)))));
     // Frame n shows lesson time from + n / fps. Each frame is sent as [4-byte length][JPEG bytes].

@@ -400,32 +400,49 @@
     polygon(ctx, P, flaps.E, 'rgba(195, 212, 238, 0.92)');
   }
 
-  // 5. Design: cut and fold a 20 cm sheet into the largest open box.
+  // Exact fractions for labels: frac(20, 6) -> "10/3", frac(12, 6) -> "2".
+  function frac(n, d) {
+    const g = (a, b) => (b ? g(b, a % b) : Math.abs(a));
+    const k = g(n, d);
+    return d / k === 1 ? String(n / k) : (n / k) + '/' + (d / k);
+  }
+  // A round tick step (1, 2 or 5 times a power of ten) giving about three ticks up to v.
+  function niceStep(v) {
+    const raw = v / 3;
+    const pow = Math.pow(10, Math.floor(Math.log10(raw)));
+    return [1, 2, 5, 10].map((m) => m * pow).find((st) => st >= raw);
+  }
+
+  // 5. Design: cut and fold a square sheet into the largest open box.
+  // Every label is computed from M.SHEET, so changing the sheet size in math.js
+  // updates the picture, the graph and the working together.
   scenes.box = {
     title: 'Design: open box',
     draw(ctx, s) {
+      const S = M.SHEET;
+      const half = S / 2;
+      const xs = frac(S, 6);
       D.heading(ctx, '4 · Design', 'Cut, fold, maximize: the open-top box', s.p('rail', 0, 0.3));
       const step = s.started('justify') ? 4 : s.started('calculus') ? (s.p('calculus') < 0.5 ? 2 : 3) : s.started('fold') ? 1 : s.started('sheet') ? 0 : -1;
       rail(ctx, step, step, ease(s.p('rail', 0.2, 0.6)));
 
-      // Corner cut x and fold angle over time.
-      let x = 3;
-      if (s.started('sweep')) x = stations([3, 0.6, 9.2, M.BOX.xStar], s.p('sweep'), 0.7).value;
+      // Corner cut x (shallow → deep → best) and fold angle over time.
+      let x = 0.15 * S;
+      if (s.started('sweep')) x = stations([0.15 * S, 0.03 * S, 0.46 * S, M.BOX.xStar], s.p('sweep'), 0.7).value;
       const theta = Math.PI / 2 * ease(s.p('fold', 0.1, 0.7));
-      const P = isoMap(500, 640, 20);
+      const P = isoMap(500, 640, 400 / S);
       const shapeA = ease(s.p('sheet', 0, 0.3));
       fade(ctx, shapeA, () => {
         drawBox(ctx, P, x, theta, 1 - ease(s.p('fold', 0, 0.3)));
-        const h = M.SHEET / 2;
-        const a = h - x;
+        const a = half - x;
         if (theta < 0.2) {
-          const [lx, ly] = P(0, -h, 0);
-          D.text(ctx, '20 cm', lx + 34, ly - 22, { size: 30, weight: 600 });
-          const [cx, cy] = P(h - x / 2, -h + x / 2, 0);
+          const [lx, ly] = P(0, -half, 0);
+          D.text(ctx, S + ' cm', lx + 34, ly - 22, { size: 30, weight: 600 });
+          const [cx, cy] = P(half - x / 2, -half + x / 2, 0);
           D.text(ctx, 'x', cx, cy + 10, { size: 32, weight: 700, color: C.slope, align: 'center' });
         } else {
           const [bx, by] = P(a, 0, 0);
-          D.text(ctx, '20 − 2x', bx + 70, by + 40, { size: 30, weight: 600 });
+          D.text(ctx, S + ' − 2x', bx + 70, by + 40, { size: 30, weight: 600 });
           const [hx, hy] = P(a + x * Math.cos(theta), -a, x * Math.sin(theta) / 2);
           D.text(ctx, 'x', hx + 18, hy + 10, { size: 32, weight: 700, color: C.slope });
         }
@@ -435,9 +452,10 @@
       const RX = 960;
       const ga = ease(s.p('fold', 0.5, 0.9));
       fade(ctx, ga, () => {
-        const p = plotCard(ctx, { x: RX, y: 345, w: 864, h: 380 }, { xMin: 0, xMax: 10.4, yMin: 0, yMax: 680 });
-        p.axes(ctx, { xTicks: [2, 4, 6, 8, 10], yTicks: [200, 400, 600], xLabel: 'x (cm)' });
-        const traced = s.started('sweep') ? 10 : x;
+        const yStep = niceStep(M.BOX.vMax);
+        const p = plotCard(ctx, { x: RX, y: 345, w: 864, h: 380 }, { xMin: 0, xMax: half * 1.04, yMin: 0, yMax: M.BOX.vMax * 1.15 });
+        p.axes(ctx, { xTicks: [1, 2, 3, 4, 5].map((k) => k * S / 10), yTicks: [1, 2, 3].map((k) => k * yStep).filter((v) => v < M.BOX.vMax * 1.1), xLabel: 'x (cm)' });
+        const traced = s.started('sweep') ? half : x;
         p.curve(ctx, M.boxV, { from: 0, to: traced, width: 5 });
         p.dot(ctx, x, M.boxV(x), { r: 11, color: C.fn });
         D.text(ctx, [['V(x)', C.fn, 700], '  cm^{3}'], RX + 30, 390, { size: 30 });
@@ -446,18 +464,20 @@
           const ja = ease(s.p('justify', 0, 0.3));
           p.dot(ctx, M.BOX.xStar, M.BOX.vMax, { r: 13, color: C.slope, alpha: ja });
           p.dot(ctx, 0, 0, { r: 10, alpha: ja });
-          p.dot(ctx, 10, 0, { r: 10, alpha: ja });
+          p.dot(ctx, half, 0, { r: 10, alpha: ja });
         }
       });
       D.steps(ctx, [
-        { c: '1. Domain: 0 < x < 10 (the cut must leave a base)', p: s.p('sheet', 0.4, 0.7) },
-        { c: '2. V(x) = x(20 − 2x)^{2}   (height × base area)', p: s.p('fold', 0.6, 0.9) },
-        { c: '3. V′(x) = (20 − 2x)(20 − 6x)   (product rule, factored)', p: s.p('calculus', 0.1, 0.4) },
-        { c: '4. V′ = 0: x = 10 (no base, not allowed) or x = 10/3', p: s.p('calculus', 0.5, 0.8) },
-        { c: ['5. V(0) = V(10) = 0 and V > 0 between, so ', ['x = 10/3 cm', C.slope, 700], ' is the max'], p: s.p('justify', 0.1, 0.4) },
+        { c: '1. Domain: 0 < x < ' + half + ' (the cut must leave a base)', p: s.p('sheet', 0.4, 0.7) },
+        { c: '2. V(x) = x(' + S + ' − 2x)^{2}   (height × base area)', p: s.p('fold', 0.6, 0.9) },
+        { c: '3. V′(x) = (' + S + ' − 2x)(' + S + ' − 6x)   (product rule, factored)', p: s.p('calculus', 0.1, 0.4) },
+        { c: '4. V′ = 0: x = ' + half + ' (no base, not allowed) or x = ' + xs, p: s.p('calculus', 0.5, 0.8) },
+        { c: ['5. V(0) = V(' + half + ') = 0 and V > 0 between, so ', ['x = ' + xs + ' cm', C.slope, 700], ' is the max'], p: s.p('justify', 0.1, 0.4) },
       ], RX, 790, { size: 28, gap: 48 });
       fade(ctx, ease(s.p('justify', 0.45, 0.7)), () => {
-        D.pill(ctx, 'V_{max} = 16000/27 ≈ ' + fmt(M.BOX.vMax, 2) + ' cm^{3}', L, 960, { size: 30, weight: 700, bg: C.mintSoft });
+        // V(S/6) = (S/6)(2S/3)² = 2S³/27.
+        const exact = frac(2 * S * S * S, 27);
+        D.pill(ctx, 'V_{max} = ' + exact + (exact.includes('/') ? ' ≈ ' + fmt(M.BOX.vMax, 2) : '') + ' cm^{3}', L, 960, { size: 30, weight: 700, bg: C.mintSoft });
         D.text(ctx, 'Practice: HW 4.1', L + 520, 970, { size: 28, color: C.slate });
       });
     },
@@ -702,7 +722,7 @@
       D.heading(ctx, 'Recap', 'Candidates, then proof', s.p('cards', 0, 0.2));
       rail(ctx, -1, ease(s.p('cards', 0.05, 0.3)) > 0.5 ? 5 : 0);
       const cards = [
-        ['Design', 'open box from a 20 cm sheet', 'x = 10/3 cm,  V ≈ ' + fmt(M.BOX.vMax, 2) + ' cm^{3}', 'V = 0 at both ends'],
+        ['Design', 'open box from a ' + M.SHEET + ' cm sheet', 'x = ' + frac(M.SHEET, 6) + ' cm,  V ≈ ' + fmt(M.BOX.vMax, 2) + ' cm^{3}', 'V = 0 at both ends'],
         ['Economics', 'p = 100 − 2q,  C = 200 + 20q', 'q = 20,  profit $' + fmt(M.profit(20), 0), 'MR = MC, then P″ < 0'],
         ['Biological science', 'C(t) = 10t / (t^{2} + 4)', 't = 2 h,  ' + fmt(M.DRUG.peak, 1) + ' mg/L', 'sign of C′ (EVT does not apply)'],
       ];
