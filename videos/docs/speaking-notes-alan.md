@@ -1,3 +1,5 @@
+> **2026-11-08 production note:** These headings retain the original silent timeline. The supplied recordings use the measured timings in `alan-recording-cues.csv`. Watch the MP4 review copy for synchronized sound. See `../../START_HERE.md` for the current Windows workflow.
+
 # Speaking notes: Alan, "Zoom In Until It's Straight"
 
 > **DRAFT for Alan to rewrite in his own words.** Claude Code wrote these notes as a starting point. They match what the animation shows, but the final narration must be Alan's own voice and wording. Do not read them word for word; change anything that doesn't sound like you. No AI voice is used anywhere.

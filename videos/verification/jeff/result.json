@@ -1,0 +1,17 @@
+{
+  "duration": 670,
+  "frames": 114,
+  "scenes": 9,
+  "controls": [
+    "invalid URL speed falls back to 1x",
+    "play/pause advances clock",
+    "native slider keyboard",
+    "native checkbox keyboard",
+    "next beat",
+    "scene select",
+    "presenter stops at beat boundary",
+    "390px page fits viewport (video text still needs landscape/fullscreen)"
+  ],
+  "errors": [],
+  "overflow": []
+}

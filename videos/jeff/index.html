@@ -18,12 +18,13 @@
   <script src="math.js"></script>
   <script src="scenes.js"></script>
   <script src="timing.js"></script>
+  <script src="narration-timing.js"></script>
   <script>
     CCT.createPlayer({
       title: 'Jeff: Extreme Values and Optimization',
       header: 'MCV4U · Topic C · Jeff: Extreme Values and Optimization',
       scenes: JeffScenes,
-      timing: JeffTiming,
+      timing: new URLSearchParams(location.search).get('narration') === '1' ? JeffNarrationTiming : JeffTiming,
       mount: document.getElementById('app'),
     });
   </script>

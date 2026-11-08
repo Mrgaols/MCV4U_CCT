@@ -1,0 +1,66 @@
+{
+  "title": "MCV4U CCT \u00b7 Derivatives and Optimization",
+  "solutions": 43,
+  "videos": 2,
+  "navigationErrors": [],
+  "duplicateIds": [],
+  "finalQ10Fixed": true,
+  "videoNotes": [
+    "Alan \u00b7 15:30 \u00b7 Recorded English narration",
+    "Open video in a separate tabExplore the interactive animation",
+    "Next: Homework 1Homework 2Assessment 1",
+    "Jeff \u00b7 14:00 \u00b7 Recorded English narration",
+    "Open video in a separate tabExplore the interactive animation",
+    "Next: Homework 3Homework 4Assessment 2",
+    "Mathematical clarification: The drug-model domain [0, \u221e) is closed but unbounded. The closed-and-bounded interval form of EVT does not apply. Instead, C\u2032 changes from positive to negative at t = 2, C(0) = 0, and C(t) \u2192 0 as t \u2192 \u221e; the absolute maximum is 2.5 mg/L at 2 hours."
+  ],
+  "figures": 14,
+  "servedUrl": "[local checkout]/index.html",
+  "chapterSeeking": [
+    {
+      "presenter": "alan",
+      "expected": 78.567,
+      "actual": 78.567,
+      "passed": true
+    },
+    {
+      "presenter": "jeff",
+      "expected": 66.567,
+      "actual": 66.566998,
+      "passed": true
+    }
+  ],
+  "quizCorrect": "Correct.",
+  "quizIncorrect": "Not quite. Review the explanation and try again.",
+  "viewport1440": {
+    "scrollWidth": 1440,
+    "pass": true
+  },
+  "viewport390": {
+    "scrollWidth": 390,
+    "pass": true
+  },
+  "media": [
+    {
+      "src": "Alan narrated lesson",
+      "duration": 929.8,
+      "width": 1920,
+      "height": 1080,
+      "playback": true
+    },
+    {
+      "src": "Jeff narrated lesson",
+      "duration": 839.6,
+      "width": 1920,
+      "height": 1080,
+      "playback": true
+    }
+  ],
+  "errors": [],
+  "withoutJavaScript": {
+    "players": 2,
+    "videoCount": "2",
+    "solutionCount": 43
+  },
+  "local_file_url_redacted": true
+}

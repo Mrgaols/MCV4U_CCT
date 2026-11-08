@@ -37,3 +37,10 @@ How to use it: add a row whenever you do real work, such as reviewing a derivati
 - [ ] Do the live demo exercise in `student-guide.md` §7: change a parameter, predict, test and explain.
 - [ ] Review the other student's lesson and be able to explain one of its animations and its code.
 - [ ] Ask the teacher whether AI-assisted animation is allowed, and record the answer here.
+
+
+## 2026-11-08 — observed supplied materials and assistant work
+
+The user supplied recordings in folders labelled Alan and Jeff. This review observed 36 and 38 unique numbered clips respectively and preserved the takes used in production. This establishes availability of supplied recordings, not biometric speaker identity, equal contribution or completion of the other student exercises.
+
+Codex performed the isolated review, fixes, recording mapping, mastering, rendering and local website integration described in production-log.md. The student sign-off rows above remain for the students to complete truthfully.

@@ -1,2 +1,7 @@
-# Rendered videos are large; keep them out of git.
-exports/
+# Keep temporary exports and raw takes local. Track only the approved website MP4s.
+exports/*
+!exports/alan-narrated-review.mp4
+!exports/jeff-narrated-review.mp4
+audio/
+__pycache__/
+.cache/

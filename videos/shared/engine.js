@@ -33,7 +33,9 @@
     const state = {
       t: 0,
       playing: false,
-      speed: Number(params.get('speed')) || 1,
+      // URL values must agree with the visible selector; negative or infinite
+      // speeds would make the clock run backwards or break scene lookup.
+      speed: [0.5, 0.75, 1, 1.25, 1.5, 2].includes(Number(params.get('speed'))) ? Number(params.get('speed')) : 1,
       presenter: params.get('presenter') === '1',
       diag: params.get('diag') === '1',
       anchorT: 0,
@@ -240,7 +242,9 @@
     el('diag').addEventListener('change', (e) => { state.diag = e.target.checked; render(state.t); });
     window.addEventListener('resize', () => render(state.t));
     window.addEventListener('keydown', (e) => {
-      if (e.target.tagName === 'SELECT' || e.metaKey || e.ctrlKey || e.altKey) return;
+      // Preserve native keyboard operation of the seek slider, checkboxes and
+      // buttons. Space on a focused checkbox must not also start playback.
+      if (e.target.closest('input, select, button, textarea, [contenteditable="true"]') || e.metaKey || e.ctrlKey || e.altKey) return;
       const k = e.key;
       if (k === ' ') { e.preventDefault(); setPlaying(!state.playing); }
       else if (k === 'ArrowRight') { e.preventDefault(); next(); }

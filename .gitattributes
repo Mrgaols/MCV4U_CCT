@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.mp4 -text
+*.m4a -text
+*.pdf -text
+*.png -text
+*.jpg -text
+.DS_Store -text

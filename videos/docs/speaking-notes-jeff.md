@@ -1,3 +1,5 @@
+> **2026-11-08 production note:** These headings retain the original silent timeline. The supplied recordings use the measured timings in `jeff-recording-cues.csv`. Watch the MP4 review copy for synchronized sound. See `../../START_HERE.md` for the current Windows workflow.
+
 # Speaking notes: Jeff, "Candidates, Then Proof"
 
 > **DRAFT for Jeff to rewrite in his own words.** Claude Code wrote these notes as a starting point. They match what the animation shows, but the final narration must be Jeff's own voice and wording. Do not read them word for word; change anything that doesn't sound like you. No AI voice is used anywhere.
@@ -55,7 +57,7 @@ Each section heading gives the scene's start time on the silent timeline. Lines 
 "Now just sort them. The absolute maximum is 2, and it happens twice: at the critical number minus 1 and at the endpoint 2. The absolute minimum is minus 2, at the endpoint minus 2 and the critical number 1. The endpoints tie with the turning points, so never skip them."
 
 ▶ **theorem** *The Extreme Value Theorem.*
-"Why are we sure a maximum exists at all? The Extreme Value Theorem: if f is continuous on a closed interval, then f has an absolute maximum and an absolute minimum there, and they happen at critical numbers or endpoints."
+"Why are we sure a maximum exists at all? The Extreme Value Theorem: if f is continuous on a closed, bounded interval, then f attains an absolute maximum and an absolute minimum there. To find them, compare the endpoints and all interior critical numbers, including points where the function exists but its derivative does not."
 
 ▶ **open** *Counterexample: f(x) = x on the open interval (0, 1).*
 "Both conditions matter. On the open interval from 0 to 1, f of x equals x gets to 0.9, then 0.99, then 0.999, but never reaches 1. So there's no maximum."
@@ -125,8 +127,8 @@ Each section heading gives the scene's start time on the silent timeline. Lines 
 ▶ **derivative** *Quotient rule, steps 3 and 4.*
 "Step 3 uses the quotient rule. After simplifying, C prime of t equals 10 times 4 minus t squared, over t squared plus 4, squared. Step 4: C prime is zero at t equals 2. t equals minus 2 is outside the domain."
 
-▶ **justify** *The domain is not closed; sign bands for C′.*
-"Step 5 is the important part. The domain goes on forever, so it's not a closed interval, and the Extreme Value Theorem doesn't apply. Instead we use the sign of C prime: positive before 2 and negative after. The level rises, then falls, so t equals 2 is the absolute maximum."
+▶ **justify** *The domain is closed but unbounded; sign bands for C′.*
+"Step 5 is the important part. The domain from zero to infinity is closed but unbounded, so the Extreme Value Theorem for closed, bounded intervals does not apply directly. Instead, C prime is positive throughout zero to two and negative throughout two to infinity. The level increases up to two and decreases everywhere after two, so t equals two is the absolute maximum over the whole domain."
 
 ▶ **interpret** *Result banner.*
 "So in this model the drug level peaks at 2.5 milligrams per litre, 2 hours after the dose."

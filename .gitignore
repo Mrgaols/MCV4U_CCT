@@ -1,0 +1,5 @@
+# Local machine and development artifacts
+.DS_Store
+__pycache__/
+*.pyc
+.cache/
