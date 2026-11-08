@@ -1,0 +1,116 @@
+{
+  "alan": {
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1",
+          "duration": "929.766667",
+          "nb_frames": "27893",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0",
+          "duration": "929.800000",
+          "nb_frames": "43586"
+        }
+      ],
+      "format": {
+        "duration": "929.800000"
+      }
+    },
+    "encoded_audio_sha256": "SHA256=939bfe8a40adfa63a8f8d2708769ffc9baf41904ce6d1f0dcabbbd985b610ed1",
+    "audio_stream_identical_to_v3": true,
+    "frame_count_unchanged": true,
+    "duration_unchanged": true,
+    "full_video_decode": "passed",
+    "dark_banner_detections_all_frames": 0,
+    "edited_band_y": 1008,
+    "edited_band_height": 56,
+    "content_samples": [
+      {
+        "time": 2,
+        "content_area_psnr_db": 58.54727212817252
+      },
+      {
+        "time": 73,
+        "content_area_psnr_db": 53.69269417019858
+      },
+      {
+        "time": 464.9,
+        "content_area_psnr_db": 55.437474371074195
+      },
+      {
+        "time": 928.8,
+        "content_area_psnr_db": 56.09032483867331
+      }
+    ],
+    "old_version_preserved": true
+  },
+  "jeff": {
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1",
+          "duration": "839.566667",
+          "nb_frames": "25187",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0",
+          "duration": "839.600000",
+          "nb_frames": "39356"
+        }
+      ],
+      "format": {
+        "duration": "839.600000"
+      }
+    },
+    "encoded_audio_sha256": "SHA256=0c43f2e39676c2d0224d2df65a1e4b72242f1c732ba271f87415330d014a5dc6",
+    "audio_stream_identical_to_v3": true,
+    "frame_count_unchanged": true,
+    "duration_unchanged": true,
+    "full_video_decode": "passed",
+    "dark_banner_detections_all_frames": 0,
+    "edited_band_y": 1008,
+    "edited_band_height": 56,
+    "content_samples": [
+      {
+        "time": 2,
+        "content_area_psnr_db": 58.05327398335908
+      },
+      {
+        "time": 73,
+        "content_area_psnr_db": 50.38192517642968
+      },
+      {
+        "time": 419.8,
+        "content_area_psnr_db": 51.38818197042097
+      },
+      {
+        "time": 838.6,
+        "content_area_psnr_db": 54.8516543143214
+      }
+    ],
+    "old_version_preserved": true
+  }
+}

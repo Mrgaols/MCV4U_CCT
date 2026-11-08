@@ -154,7 +154,7 @@ The videos add three examples that are **not** on the site. They are derived bel
 ### Biology: C(t) = 10t / (t² + 4) mg/L, t ≥ 0 h (illustrative, not medical data)
 - Quotient rule: C′(t) = [10(t² + 4) − 10t · 2t] / (t² + 4)² = 10(4 − t²) / (t² + 4)².
 - C′ = 0 at t = 2 (t = −2 is outside the domain). C′ > 0 on [0, 2) and C′ < 0 for t > 2, so t = 2 is the absolute max on [0, ∞).
-  - The EVT does not apply here, because [0, ∞) is not closed and bounded.
+  - The EVT does not apply here, because [0, ∞) is closed but unbounded. The EVT requires a closed, bounded interval.
 - C(2) = 20/8 = **2.5 mg/L**. C(10) = 100/104 ≈ 0.96 mg/L, which is the vial reading at 10 h.
 - Test: `drug model: peak 2.5 mg/L at t = 2 h …`
 

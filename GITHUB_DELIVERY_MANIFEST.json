@@ -1,0 +1,410 @@
+{
+  "base_commit": "67dd1961238202d3ab723f62ba23c1d3b81267dc",
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 95,
+      "sha256": "05af1cff1bc59737e7bc95d2600344ef4e4f074d0d53cb7c2c53cc6104576e86"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 79,
+      "sha256": "c37d18e6ecdbb496f38eb5cb175f0ba0c18ab96db892ebe96c5483e7322408ef"
+    },
+    {
+      "path": "CCT Guidlines July 2026.pdf",
+      "size_bytes": 149189,
+      "sha256": "0e8142fb17abaa251c5ea924baf03056b0cc5ed7bac0d87286e1310ccfbdc285"
+    },
+    {
+      "path": "CCT Rubric 2026.pdf",
+      "size_bytes": 102998,
+      "sha256": "2b5b894cd39a608a5b08885d8f37447249528f6bb2d02b0c7bc6285c77d43942"
+    },
+    {
+      "path": "CLAUDE.md",
+      "size_bytes": 18308,
+      "sha256": "0d30104c53df128332955caea57f88a9f83ac294b66432e4d3ebe5544a18a8e2"
+    },
+    {
+      "path": "FINAL_ACCEPTANCE.md",
+      "size_bytes": 2701,
+      "sha256": "2790bda6a1b762822bd8a5e12628f06a0ce6cbecbba7ee28c1894934841a22d0"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 164185,
+      "sha256": "3838ac8b7f38797753c182a069b392a0aecf1aa45686c1b7ff210031e91016a5"
+    },
+    {
+      "path": "MCV4U-CCT-website.pdf",
+      "size_bytes": 981152,
+      "sha256": "b1836a33c5d0c9d27649eb348f70b87f5aed6f1f4824a06aaa3bf1b5b2c1bc68"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2951,
+      "sha256": "f672a0af6e05076760be0eb1e12f499980a12ea159ade33bd5fadd381da3104c"
+    },
+    {
+      "path": "rubric-check.html",
+      "size_bytes": 4622,
+      "sha256": "f381dc4831d6a36e08059d128ca7211ef8ae86a154d7a5168b8960d3d47bfd4c"
+    },
+    {
+      "path": "student-response.html",
+      "size_bytes": 1998,
+      "sha256": "d65e487d1c12e034b98f43db51651ff7e44f2e5055a9c9adf800779ed3f240e4"
+    },
+    {
+      "path": "videos/.gitignore",
+      "size_bytes": 190,
+      "sha256": "b214109c9bf249b987b831599f5dabf9afcc9a6f3dc12ba8e7f52f05406d46dd"
+    },
+    {
+      "path": "videos/alan/index.html",
+      "size_bytes": 1129,
+      "sha256": "6597d1abbb371e6b545f905f9b56b87bbb63974920cc58e2facfea5142b324e0"
+    },
+    {
+      "path": "videos/alan/math.js",
+      "size_bytes": 3469,
+      "sha256": "1385b946f03121ea19e4c2def10f64fca50195aab28a4a109a53ea0d63324408"
+    },
+    {
+      "path": "videos/alan/narration-timing.js",
+      "size_bytes": 11549,
+      "sha256": "2848940db6e0b3b42d914d107fd108e1a46532cfdec81fa65cdbdf7b3c8948da"
+    },
+    {
+      "path": "videos/alan/scenes.js",
+      "size_bytes": 44159,
+      "sha256": "b0a955bfba1bcbd9cd51d99e46ca68536bb3b389237c5d9244eb7dd0f487a751"
+    },
+    {
+      "path": "videos/alan/timing.js",
+      "size_bytes": 1157,
+      "sha256": "1fd4abe3589a99e723b1024918af73bf5de16086b0846adbe57a642612b6c805"
+    },
+    {
+      "path": "videos/CCT_PROGRESS_REPORT.md",
+      "size_bytes": 10089,
+      "sha256": "e4f7521154da1a852ea1c2bffea06dee9d8cb845e049bea83c91b832f30689d0"
+    },
+    {
+      "path": "videos/docs/alan-recording-cues.csv",
+      "size_bytes": 1707,
+      "sha256": "a034e079467c46f355148c54b573fdc651a23e48fece9c404dc0e27e9d292dab"
+    },
+    {
+      "path": "videos/docs/ALAN_DENOISE_V3.md",
+      "size_bytes": 2416,
+      "sha256": "e499140a35e0bd96d345caec8b1fc31bb2f69ecf53859db0ffe3e984a8479f3a"
+    },
+    {
+      "path": "videos/docs/CLASS_PRESENTATION_AND_FEEDBACK.md",
+      "size_bytes": 2398,
+      "sha256": "581817d604d76b2ca9101bf56917f9f2c9deb77b358ea2c5f5f51783378738c3"
+    },
+    {
+      "path": "videos/docs/contribution-record.md",
+      "size_bytes": 3758,
+      "sha256": "aae8506f8d1b3b1949d8572817afa6763cc70432f88e2a9c73563451c01098c3"
+    },
+    {
+      "path": "videos/docs/historical-progress-2026-11-02.md",
+      "size_bytes": 9083,
+      "sha256": "34af5c9d70718b92e6dabb3b095d0e7c3fb24d9597e876bb8f1780a4aeba138a"
+    },
+    {
+      "path": "videos/docs/jeff-recording-cues.csv",
+      "size_bytes": 1720,
+      "sha256": "5a75fef27a6693f2c93ff114db135d7fcd9ca373895e80ad76813fff93ae8a37"
+    },
+    {
+      "path": "videos/docs/math-checks.md",
+      "size_bytes": 10021,
+      "sha256": "04cc81ae3e8e19942234e1364ce69cc1b8fee00753732138e63aed2c7262c17a"
+    },
+    {
+      "path": "videos/docs/production-log.md",
+      "size_bytes": 12511,
+      "sha256": "7f7ec5809fdedf701e478bf077686f028e9a2074982f0fa10ecc5591c9039ef6"
+    },
+    {
+      "path": "videos/docs/RECORDING_REVIEW.md",
+      "size_bytes": 3856,
+      "sha256": "fa8840f2891ca74d319924b722adb223990c392522e0d93d0ddb5a7da010f82c"
+    },
+    {
+      "path": "videos/docs/speaking-notes-alan.md",
+      "size_bytes": 13505,
+      "sha256": "143330f57600d1db98c71615169c0304714da8aff5d4c38766e05ad5d4d97639"
+    },
+    {
+      "path": "videos/docs/speaking-notes-jeff.md",
+      "size_bytes": 13197,
+      "sha256": "68af8604db43b1f1b39f25fc9893cbf593b5dee0cfe3145587c6c13cc909a698"
+    },
+    {
+      "path": "videos/docs/storyboard.md",
+      "size_bytes": 8091,
+      "sha256": "91fe6af6f60bc39bd9070bc62a8e0657884dd5515c053b102f96cb47288d4042"
+    },
+    {
+      "path": "videos/docs/student-guide.md",
+      "size_bytes": 10279,
+      "sha256": "3a6ca5574ffa392c3a2b3a12c5972612c7c71df56ae168018f81b457dc866dc8"
+    },
+    {
+      "path": "videos/exports/alan-narrated-review.mp4",
+      "size_bytes": 48603019,
+      "sha256": "1e0d914bbdc7fac9073e95a78817106e199a50283a2ea47e1bcd8dd89d3c9a9e"
+    },
+    {
+      "path": "videos/exports/jeff-narrated-review.mp4",
+      "size_bytes": 41865031,
+      "sha256": "d785c67b3c918996eaec0d8a99a57bcf532f09beab7b61f8d4bf437e12a25fba"
+    },
+    {
+      "path": "videos/jeff/index.html",
+      "size_bytes": 1138,
+      "sha256": "63a3b4484688c30a273e99a88ace9894b0bb3a019286ecf6958d3fc12a668e12"
+    },
+    {
+      "path": "videos/jeff/math.js",
+      "size_bytes": 4226,
+      "sha256": "7bd116bfc0deb6fdc9bc9c1f86a711983f04f2e75cf5694b1d73364fb599ed84"
+    },
+    {
+      "path": "videos/jeff/narration-timing.js",
+      "size_bytes": 12028,
+      "sha256": "f0c7b68dcf512c0fbef2b1c42001c229afafdbbf3ec244db39317eb3627ced05"
+    },
+    {
+      "path": "videos/jeff/scenes.js",
+      "size_bytes": 43206,
+      "sha256": "bdc20ed3684bc61e341ae22996fe79fefe69e937aa120f8a400aa56d3b806f97"
+    },
+    {
+      "path": "videos/jeff/timing.js",
+      "size_bytes": 1132,
+      "sha256": "36781492e852386dec3f4c784d11cb2f88f10dc58a4a2b1002eab3510cccb169"
+    },
+    {
+      "path": "videos/README.md",
+      "size_bytes": 898,
+      "sha256": "52866fd8b0cdc47d2c1716e049fb3d54169f6cf879fca57fc482d7c6224d51f9"
+    },
+    {
+      "path": "videos/shared/draw.js",
+      "size_bytes": 11856,
+      "sha256": "3f4929eba2918c4e6a1a0ac532624b4e5e63eca47458905cc128826817dd0556"
+    },
+    {
+      "path": "videos/shared/engine.js",
+      "size_bytes": 12785,
+      "sha256": "b040279c5c51e434be58506614b40e2f24244d22a195b553e139889ada980756"
+    },
+    {
+      "path": "videos/shared/player.css",
+      "size_bytes": 3206,
+      "sha256": "48ebd35e748faf57f422cb08bff4c836d8be965514a36ab493a555af6895832a"
+    },
+    {
+      "path": "videos/shared/plot.js",
+      "size_bytes": 8463,
+      "sha256": "75f608ac9eced117a1c5004447d7a92571b17f41bed2bbdec249c45ca4c000a7"
+    },
+    {
+      "path": "videos/shared/theme.js",
+      "size_bytes": 1849,
+      "sha256": "0d90e14b84bf9bb86f823f95162665e1b17d8719cf82db80ca47183c36d23d79"
+    },
+    {
+      "path": "videos/shared/timeline.js",
+      "size_bytes": 3829,
+      "sha256": "3f2d0f7334ad4fa6877db9cfdae044f44c4e7cf0f4e77a7bddda7141c76d9dfc"
+    },
+    {
+      "path": "videos/tests/engine.test.mjs",
+      "size_bytes": 3323,
+      "sha256": "a649dffab338526b4f7939521ef674bad3862a47c92e146c7f390db5d2f7a242"
+    },
+    {
+      "path": "videos/tests/math-alan.test.mjs",
+      "size_bytes": 4287,
+      "sha256": "40e3de067111ca198cb7ffc87b4a8759f51ba34c2c05acdc4000f93faf1ef10f"
+    },
+    {
+      "path": "videos/tests/math-jeff.test.mjs",
+      "size_bytes": 4532,
+      "sha256": "c6c8c31ec32fe848cc8ae40913303c6a027efa10d7370e12f397e80a9dd96d39"
+    },
+    {
+      "path": "videos/tools/encode.swift",
+      "size_bytes": 5622,
+      "sha256": "c0e4d166f0897a3c18a578eb154e8f53a79c30415871ac22c1b750db52b83ea9"
+    },
+    {
+      "path": "videos/tools/mux-narration.py",
+      "size_bytes": 1919,
+      "sha256": "75c6dbb72131e2fbf30ba343fa8d77c870ecd50a5c3712fd75fe15822dd3dcdf"
+    },
+    {
+      "path": "videos/tools/prepare-narration.py",
+      "size_bytes": 7507,
+      "sha256": "4910b084fd30246aa84f0c598794fa16111eb722fdbd5aafd781e2cfaf279a5b"
+    },
+    {
+      "path": "videos/tools/render.mjs",
+      "size_bytes": 11122,
+      "sha256": "16f811e765f67f385febb28a3f086ab0cad6fcded76ee84715caa29f66532014"
+    },
+    {
+      "path": "videos/tools/verify-browser.mjs",
+      "size_bytes": 11409,
+      "sha256": "dcfe6f608e1acbc48b9d5c558ee169e526e8aaab8343950cb6ccbb56532a1fa0"
+    },
+    {
+      "path": "videos/tools/verify-denoise.mjs",
+      "size_bytes": 8201,
+      "sha256": "35f8b1f1816f0c5ba88b22c8cec96b6cfcf1f9b223c186325f9664be5bf2a805"
+    },
+    {
+      "path": "videos/tools/verify-site.mjs",
+      "size_bytes": 12217,
+      "sha256": "82dc677885a048526050e0ba9a0647faeaefb95c2e7235c55cd7fcd35d13ca2d"
+    },
+    {
+      "path": "videos/verification/alan/bridge.png",
+      "size_bytes": 167992,
+      "sha256": "f3e023188c29a99219b6f819657de6e62ab45897da59bf2093c3f4365535389c"
+    },
+    {
+      "path": "videos/verification/alan/distance.png",
+      "size_bytes": 160980,
+      "sha256": "cb83b2474d9e8f18ffab4684b08e511951975ec56ffb7f73227b9d5e4cd4b612"
+    },
+    {
+      "path": "videos/verification/alan/gallery.png",
+      "size_bytes": 181841,
+      "sha256": "8b083a79ddb8bb90d1bfbd085877ec40368002d6dd27e330284feb4475d47815"
+    },
+    {
+      "path": "videos/verification/alan/hook.png",
+      "size_bytes": 175768,
+      "sha256": "bf415f4b1ee683f71a537acfa020d50c66868dcb9598a470f97a43141a6b607a"
+    },
+    {
+      "path": "videos/verification/alan/microscope.png",
+      "size_bytes": 188008,
+      "sha256": "ba8541d706297ea8d868ce34e2feee7905a6ac4b1aa7e36371d9f70cf477c33d"
+    },
+    {
+      "path": "videos/verification/alan/motion.png",
+      "size_bytes": 192826,
+      "sha256": "93db8b67efd69ae2f89a537eba66f068bfb65dd4805fc18f47023956ae11c44c"
+    },
+    {
+      "path": "videos/verification/alan/piecewise.png",
+      "size_bytes": 160408,
+      "sha256": "3c5343cba96e647774c387558787619fe6ca1c9cba37c28d31c8c147aa637edc"
+    },
+    {
+      "path": "videos/verification/alan/recap.png",
+      "size_bytes": 182843,
+      "sha256": "1059448459fc1aecc0ab3062b621fc05d4e686eec71d39c083255cc61bf8a57c"
+    },
+    {
+      "path": "videos/verification/alan/result.json",
+      "size_bytes": 400,
+      "sha256": "591860d42be60b96146d3867186e5f150c9c0d0951c08a50ff30e2a54120cba6"
+    },
+    {
+      "path": "videos/verification/alan/secant.png",
+      "size_bytes": 189137,
+      "sha256": "2ddbd458ac761ff1d61b5f7f055e1fe3b1bbd9e83e8f999e8fc51c75bdce2100"
+    },
+    {
+      "path": "videos/verification/alan/speed.png",
+      "size_bytes": 192316,
+      "sha256": "8603a64ccb1174fa40dadf547f5ff2b09f3ac8a18ee2b88844a42f0b624ecc74"
+    },
+    {
+      "path": "videos/verification/banner-removal-results.json",
+      "size_bytes": 2844,
+      "sha256": "29fa12c63a0ca9a2f6487370e961827e7602fd3adf37771c4a724f477ccbfe51"
+    },
+    {
+      "path": "videos/verification/jeff/box.png",
+      "size_bytes": 242435,
+      "sha256": "8d154598ebf5405af06e135802cfb94970a6b4ca88d67586db9eba5bfad65a3e"
+    },
+    {
+      "path": "videos/verification/jeff/critical.png",
+      "size_bytes": 221934,
+      "sha256": "4b5402cef6981d2075ca07f74dee48b9bd1d4a92d988b4b8b3a1295039439d66"
+    },
+    {
+      "path": "videos/verification/jeff/drug.png",
+      "size_bytes": 203860,
+      "sha256": "68ae21951240dbc8945ed7a49c99e7b135e2b4e62e9eb13db8c85ebbc0b2e67a"
+    },
+    {
+      "path": "videos/verification/jeff/evt.png",
+      "size_bytes": 183309,
+      "sha256": "24cecba62ccb76fa546869955ef1216a413da37271c0d3c222146a5ce1ca8de0"
+    },
+    {
+      "path": "videos/verification/jeff/hook.png",
+      "size_bytes": 181838,
+      "sha256": "620c65c447db3847413d789939fb23a0a171bd20b6c7fd77000a86acd62d5e62"
+    },
+    {
+      "path": "videos/verification/jeff/profit.png",
+      "size_bytes": 202753,
+      "sha256": "68f143b22e8d381badc99d4cc6776e7cc0322786846c110c9b5ac7a175973b63"
+    },
+    {
+      "path": "videos/verification/jeff/recap.png",
+      "size_bytes": 192413,
+      "sha256": "8aba15a2d09080403eeaa92cdd64e743816ede7e52490fcb537b9ad18077a444"
+    },
+    {
+      "path": "videos/verification/jeff/result.json",
+      "size_bytes": 399,
+      "sha256": "f1403ff0ed9dc20311590e1591d0426e2dd7ff6bbb4eb8b6e3a24c0a11712842"
+    },
+    {
+      "path": "videos/verification/jeff/tests.png",
+      "size_bytes": 158395,
+      "sha256": "9b8787ebaea987a097a6c4245884eb31536c795b149ea52aea9f0291c003850f"
+    },
+    {
+      "path": "videos/verification/jeff/yourTurn.png",
+      "size_bytes": 201543,
+      "sha256": "e757fb1277995bc282948c3a8192cf43eed14c8e10e89a375d80ba08ce68e6a1"
+    },
+    {
+      "path": "videos/verification/requirements-audit.json",
+      "size_bytes": 1307,
+      "sha256": "1f7e394c439541b4bf86aeb5ab6c7faed3173a9a51bf15bc5f868b6e50868bd4"
+    },
+    {
+      "path": "videos/verification/site/homepage.png",
+      "size_bytes": 86260,
+      "sha256": "1b224f1534b01d0bc13be21e85ea116450ed3fc3084bbcfde696eb02b831b63d"
+    },
+    {
+      "path": "videos/verification/site/result.json",
+      "size_bytes": 1839,
+      "sha256": "161421e772d29ce57d84800aedc4bc12e760cb2fa09f0108e332a0ff1a8b7ba9"
+    },
+    {
+      "path": "videos/verification/site/video-lessons.png",
+      "size_bytes": 86055,
+      "sha256": "2dca6f21349697f91fea262d4c2dca0430eea0040406c46280277042e61bebae"
+    }
+  ]
+}

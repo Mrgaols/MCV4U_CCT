@@ -16,7 +16,12 @@ import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const candidates = process.platform === 'win32'
+  ? ['C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe']
+  : process.platform === 'darwin' ? ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome']
+  : ['/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser'];
+const CHROME = process.env.CHROME || candidates.find(existsSync);
+if (!CHROME) throw new Error('Browser not found. Set CHROME to your Chrome or Edge executable.');
 
 const args = process.argv.slice(2);
 const lessonName = args[0];
@@ -26,7 +31,7 @@ if (!['alan', 'jeff'].includes(lessonName)) {
   process.exit(1);
 }
 
-const page = pathToFileURL(resolve(here, '..', lessonName, 'index.html')).href + '?export=1' + (opt('watermark') === '0' ? '&watermark=0' : '');
+const page = pathToFileURL(resolve(here, '..', lessonName, 'index.html')).href + '?export=1' + (opt('narration') === '1' ? '&narration=1' : '') + (opt('watermark') === '0' ? '&watermark=0' : '');
 
 // Minimal Chrome DevTools Protocol client over the WebSocket built into Node.
 async function launch() {
@@ -41,6 +46,7 @@ async function launch() {
       const m = buf.match(/DevTools listening on (ws:\/\/\S+)/);
       if (m) ok(m[1]);
     });
+    chrome.on('error', fail);
     chrome.on('exit', () => fail(new Error('Chrome exited before DevTools was ready:\n' + buf)));
   });
   const ws = new WebSocket(wsUrl);
@@ -68,6 +74,7 @@ async function launch() {
     const exited = new Promise((ok) => chrome.once('exit', ok));
     chrome.kill();
     await exited;
+    if (dirname(resolve(profile)) !== resolve(tmpdir()) || !profile.split(/[\\/]/).pop().startsWith('cct-chrome-')) throw new Error('Unexpected temporary profile path');
     rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
   };
   return { send, listeners, close };
@@ -101,7 +108,14 @@ async function openLesson(cdp) {
     const url = await evaluate(`(lesson.seek(${t}), document.querySelector('canvas').toDataURL('${type}', 0.92))`);
     return Buffer.from(url.slice(url.indexOf(',') + 1), 'base64');
   };
-  return { duration, frame, errors, evaluate };
+  const frameBatch = async (start, count, fps) => {
+    const urls = await evaluate(`Array.from({length:${count}}, (_,i) => {
+      lesson.seek(${start}+i/${fps});
+      return document.querySelector('canvas').toDataURL('image/jpeg',0.92);
+    })`);
+    return urls.map(url => Buffer.from(url.slice(url.indexOf(',')+1),'base64'));
+  };
+  return { duration, frame, frameBatch, errors, evaluate };
 }
 
 const cdp = await launch();
@@ -124,20 +138,55 @@ try {
     const to = Math.min(Number(opt('to', lesson.duration)), lesson.duration);
     const out = resolve(opt('video'));
     mkdirSync(dirname(out), { recursive: true });
-    // Compile the encoder once, and again whenever encode.swift is edited.
-    const bin = join(tmpdir(), 'cct-encode');
-    const src = join(here, 'encode.swift');
-    if (!existsSync(bin) || statSync(src).mtimeMs > statSync(bin).mtimeMs) execFileSync('swiftc', ['-O', src, '-o', bin], { stdio: 'inherit' });
-    const enc = spawn(bin, [out, String(fps), '1920', '1080'], { stdio: ['pipe', 'inherit', 'inherit'] });
-    const done = new Promise((ok, fail) => enc.on('exit', (code) => (code === 0 ? ok() : fail(new Error('encoder exited with ' + code)))));
+    if (!Number.isFinite(fps) || fps <= 0 || fps > 120 || !Number.isFinite(from) || !Number.isFinite(to) || from < 0 || to <= from) {
+      throw new Error('Require 0 < fps <= 120 and 0 <= from < to <= lesson duration.');
+    }
+    // Windows/Linux use FFmpeg; preserve the original native encoder on macOS.
+    const useSwift = process.platform === 'darwin' && !process.env.FFMPEG;
+    let enc;
+    if (useSwift) {
+      const bin = join(tmpdir(), 'cct-encode');
+      const src = join(here, 'encode.swift');
+      if (!existsSync(bin) || statSync(src).mtimeMs > statSync(bin).mtimeMs) execFileSync('swiftc', ['-O', src, '-o', bin], { stdio: 'inherit' });
+      enc = spawn(bin, [out, String(fps), '1920', '1080'], { stdio: ['pipe', 'inherit', 'inherit'] });
+    } else {
+      const ffmpeg = process.env.FFMPEG || 'ffmpeg';
+      execFileSync(ffmpeg, ['-version'], { stdio: 'ignore' });
+      enc = spawn(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-n', '-f', 'image2pipe', '-vcodec', 'mjpeg',
+        '-framerate', String(fps), '-i', 'pipe:0', '-an', '-c:v', 'libx264', '-preset', 'fast', '-crf', '20',
+        '-pix_fmt', 'yuv420p', '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
+    }
+    let encoderError;
+    // Attach handlers immediately, including stdin EPIPE when an encoder fails.
+    const done = new Promise((ok) => {
+      enc.on('error', (err) => { encoderError = err; ok(); });
+      enc.stdin.on('error', (err) => { encoderError = err; });
+      enc.on('close', (code) => { if (code !== 0) encoderError ||= new Error('encoder exited with ' + code); ok(); });
+    });
     // Frame n shows lesson time from + n / fps. Each frame is sent as [4-byte length][JPEG bytes].
     const frames = Math.round((to - from) * fps);
+    const batchSize = Number(opt('batch', 1));
+    if (!Number.isInteger(batchSize) || batchSize < 1 || batchSize > 16) throw new Error('Batch size must be an integer from 1 to 16');
+    if (batchSize > 1) {
+      const direct = await lesson.frame(from, 'image/jpeg');
+      const [batched] = await lesson.frameBatch(from,1,fps);
+      if (!direct.equals(batched)) throw new Error('Batched export differs from direct frame');
+    }
+    let batch = [];
     const started = Date.now();
     for (let n = 0; n < frames; n++) {
-      const jpg = await lesson.frame(from + n / fps, 'image/jpeg');
+      if (n % batchSize === 0) batch = await lesson.frameBatch(from+n/fps,Math.min(batchSize,frames-n),fps);
+      const jpg = batch[n % batchSize];
       const head = Buffer.alloc(4);
       head.writeUInt32BE(jpg.length);
-      if (!enc.stdin.write(Buffer.concat([head, jpg]))) await new Promise((ok) => enc.stdin.once('drain', ok));
+      if (encoderError) throw encoderError;
+      if (!enc.stdin.write(useSwift ? Buffer.concat([head, jpg]) : jpg)) {
+        await new Promise((ok, fail) => {
+          const drain = () => { enc.stdin.off('error', failPipe); ok(); };
+          const failPipe = (err) => { enc.stdin.off('drain', drain); fail(err); };
+          enc.stdin.once('drain', drain); enc.stdin.once('error', failPipe);
+        });
+      }
       if (n % (fps * 10) === 0) {
         const rate = (n + 1) / ((Date.now() - started) / 1000);
         process.stdout.write(`frame ${n}/${frames}  (${rate.toFixed(1)} frames/s, about ${Math.round((frames - n) / rate)} s left)\n`);
@@ -145,7 +194,13 @@ try {
     }
     enc.stdin.end();
     await done;
+    if (encoderError) throw encoderError;
     console.log(`rendered ${frames} frames in ${((Date.now() - started) / 1000).toFixed(0)} s`);
+    if (!useSwift) {
+      const probe = execFileSync(process.env.FFPROBE || 'ffprobe', ['-v', 'error', '-show_entries',
+        'format=duration:stream=codec_name,width,height,r_frame_rate', '-of', 'json', out], { encoding: 'utf8' });
+      console.log('Measured output:', probe);
+    }
   }
   if (lesson.errors.length) {
     console.error('Errors reported by the page:\n' + [...new Set(lesson.errors)].join('\n'));

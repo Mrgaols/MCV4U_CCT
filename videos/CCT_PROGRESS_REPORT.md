@@ -1,3 +1,13 @@
+# Current delivery — 2026-11-08
+
+The user-approved integrated website now contains two real narrated MP4s (Alan 929.8 s; Jeff 839.6 s), native HTML players, chapter seeking, four homework sets, three assessments and the final unit test. All 43 typed solution first steps were verified in the current 32-page PDF. Alan scenes 1–3 retain approved denoising; Jeff includes the supplied updated 7.4 recording; both bottom banners are removed.
+
+Local browser playback, chapter seeking, script-disabled player presence, quiz feedback and 390/1440-pixel layouts passed. The 34 mathematical/timeline tests passed. See the root README and rubric-check.html for evidence limits. Actual student response samples, conference feedback, complete human narration listening review and public hosting are not claimed complete. No grade is assigned. This separate-branch delivery does not modify main or activate GitHub Pages.
+
+The original progress document below is historical and predates narration production.
+
+---
+
 # CCT progress report: animated video lessons
 
 **Updated:** 2026-11-02, by Claude Code

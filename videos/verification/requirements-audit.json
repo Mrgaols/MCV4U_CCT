@@ -1,0 +1,90 @@
+{
+  "hw1": {
+    "questions": 5,
+    "typed_solutions": 5,
+    "marks": {
+      "K": 0,
+      "A": 0,
+      "T": 0,
+      "C": 0
+    },
+    "total_marks": 0
+  },
+  "hw2": {
+    "questions": 4,
+    "typed_solutions": 4,
+    "marks": {
+      "K": 0,
+      "A": 0,
+      "T": 0,
+      "C": 0
+    },
+    "total_marks": 0
+  },
+  "hw3": {
+    "questions": 5,
+    "typed_solutions": 5,
+    "marks": {
+      "K": 0,
+      "A": 0,
+      "T": 0,
+      "C": 0
+    },
+    "total_marks": 0
+  },
+  "hw4": {
+    "questions": 4,
+    "typed_solutions": 4,
+    "marks": {
+      "K": 0,
+      "A": 0,
+      "T": 0,
+      "C": 0
+    },
+    "total_marks": 0
+  },
+  "assess1": {
+    "questions": 5,
+    "typed_solutions": 5,
+    "marks": {
+      "K": 3,
+      "A": 8,
+      "T": 4,
+      "C": 3
+    },
+    "total_marks": 18
+  },
+  "assess2": {
+    "questions": 4,
+    "typed_solutions": 4,
+    "marks": {
+      "K": 2,
+      "A": 5,
+      "T": 4,
+      "C": 3
+    },
+    "total_marks": 14
+  },
+  "assess3": {
+    "questions": 5,
+    "typed_solutions": 5,
+    "marks": {
+      "K": 3,
+      "A": 10,
+      "T": 4,
+      "C": 3
+    },
+    "total_marks": 20
+  },
+  "final": {
+    "questions": 11,
+    "typed_solutions": 11,
+    "marks": {
+      "K": 10,
+      "A": 15,
+      "T": 15,
+      "C": 10
+    },
+    "total_marks": 50
+  }
+}

@@ -233,7 +233,7 @@
       fade(ctx, tA, () => {
         D.card(ctx, L, 280, 1728, 216, { fill: C.surface, border: false });
         D.text(ctx, 'Extreme Value Theorem', L + 40, 336, { size: 30, weight: 600, color: C.steel });
-        D.text(ctx, 'If f is **continuous** on a **closed** interval [a, b], then f has an absolute maximum', L + 40, 392, { size: 34 });
+        D.text(ctx, 'If f is **continuous** on a **closed, bounded** interval [a, b], it attains an absolute maximum', L + 40, 392, { size: 34 });
         D.text(ctx, 'and an absolute minimum on [a, b]. They occur at critical numbers or endpoints.', L + 40, 444, { size: 34 });
         D.text(ctx, 'Both conditions matter (Assessment 2 Q4).', L + 1688, 336, { size: 28, color: C.slate, align: 'right', alpha: ease(s.p('jump', 0.8, 1)) });
       });
@@ -578,7 +578,7 @@
     },
   };
 
-  // 7. Biology: the drug level peaks once. [0, ∞) is not closed, so use the sign of C′.
+  // 7. Biology: [0, ∞) is closed but unbounded. Use monotonicity on the whole domain.
   scenes.drug = {
     title: 'Biology: drug level',
     draw(ctx, s) {
@@ -652,8 +652,8 @@
         { c: '1. Domain: t ≥ 0 hours.  2. C(t) = 10t / (t^{2} + 4)', p: s.p('model', 0.3, 0.6) },
         { c: '3. Quotient rule: C′(t) = [10(t^{2} + 4) − 10t(2t)] / (t^{2} + 4)^{2} = 10(4 − t^{2}) / (t^{2} + 4)^{2}', p: s.p('derivative', 0.1, 0.45), size: 28 },
         { c: '4. C′ = 0 → t = 2   (t = −2 is outside the domain)', p: s.p('derivative', 0.6, 0.85) },
-        { c: '5. [0, ∞) is not a closed interval, so the EVT does not apply. C′ is + before 2 and − after,', p: s.p('justify', 0.45, 0.7), size: 28 },
-        { c: '    so t = 2 gives the absolute maximum.', p: s.p('justify', 0.55, 0.8), size: 28, gap: 64 },
+        { c: '5. [0, ∞) is closed but unbounded: the EVT does not apply directly.', p: s.p('justify', 0.45, 0.7), size: 28 },
+        { c: 'C′ > 0 on (0, 2), C′ < 0 on (2, ∞): t = 2 is the absolute maximum.', p: s.p('justify', 0.55, 0.8), size: 28, gap: 64 },
       ], RX, 790, { size: 30, gap: 50 }));
       // Result banner where the working was.
       fade(ctx, ease(s.p('interpret', 0.2, 0.6)), () => {
@@ -739,7 +739,7 @@
         });
       });
       fade(ctx, ease(s.p('cards', 0.85, 1)), () => {
-        D.text(ctx, 'f′ = 0 and endpoints give candidates. A test or a comparison proves the answer.', L, 780, { size: 34, weight: 600 });
+        D.text(ctx, 'Candidates: f′ = 0, f′ undefined (f defined), and endpoints. Then test and compare.', L, 780, { size: 34, weight: 600 });
       });
       fade(ctx, ease(s.p('next', 0, 0.3)), () => {
         D.text(ctx, 'Practise on the site:', L, 892, { size: 32, weight: 600 });

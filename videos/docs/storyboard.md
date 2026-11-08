@@ -51,7 +51,7 @@ Each table row is one scene:
 
 ## Jeff: "Candidates, Then Proof" (11:10)
 
-**Thread:** f′ = 0 and endpoints only *nominate* candidates; a test or a comparison *proves* the answer. The site's five-step checklist (lesson 3.3) is shown as a row of pills in every application.
+**Thread:** f′ = 0, undefined derivatives at domain points, and endpoints only *nominate* candidates; a test or a comparison *proves* the answer. The site's five-step checklist (lesson 3.3) is shown as a row of pills in every application.
 
 | # | Time | Goal | Key idea | Obstacle | What moves | Check |
 |---|---|---|---|---|---|---|

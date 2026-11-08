@@ -18,12 +18,13 @@
   <script src="math.js"></script>
   <script src="scenes.js"></script>
   <script src="timing.js"></script>
+  <script src="narration-timing.js"></script>
   <script>
     CCT.createPlayer({
       title: 'Alan: Differentiability and Motion',
       header: 'MCV4U · Topic C · Alan: Differentiability and Motion',
       scenes: AlanScenes,
-      timing: AlanTiming,
+      timing: new URLSearchParams(location.search).get('narration') === '1' ? AlanNarrationTiming : AlanTiming,
       mount: document.getElementById('app'),
     });
   </script>

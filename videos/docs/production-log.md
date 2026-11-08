@@ -113,3 +113,39 @@ Further checks on the files:
   - Playback in QuickTime Player was **not** tested.
 - **Silent files only.** These are technical previews, with no narration and no audio track. They do not count as the required 8-minute video lessons.
 - **Index position.** After these exports the encoder was changed to put the MP4 index at the start of the file, for faster web playback. A 2-second test export confirmed the new layout (`ftyp, moov, mdat`). The two exports above were made just before that change. Their content is the same; only the index position differs.
+
+
+## 2026-11-08 — Codex isolated Windows production review
+
+- Extracted the supplied complete handoff into a new directory and verified all 53 manifest entries.
+- Used 01_Current_Project as the source. It matches the previously inspected upstream baseline in content, with the original teacher Rubric added.
+- Created output/MCV4U-CCT-production. Preserved uploaded originals and made no GitHub push, merge, main edit or deployment.
+- Applied the reviewed Jeff EVT/unbounded-domain wording and recap fixes, player keyboard/speed fixes and Windows FFmpeg exporter.
+- Applied the website Final Q10 correction. Improved graph hover readouts by interpolating at the pointer's x and marking sampled values approximate.
+- Re-ran 34 existing tests. Rechecked baseline and recording-adjusted scenes in Windows Chrome; sampled 222 beat times for each timeline version, saved scene stills and checked playback controls.
+- Imported 36 Alan and 38 Jeff numbered recordings supplied by the user. The initial eight missing Jeff clips were subsequently supplied. Two differently packaged Jeff 1.1 files decode to the same sound; retained the previously selected take and recorded the comparison.
+- Prepared separate recording-adjusted timelines with original speech speed. Corrected resampling/padding order so each audio segment retains its allocated sample count. The original silent timing.js files remain available.
+- Applied two-pass loudness mastering. Actual AAC peak levels can differ slightly from the target; see the measured loudness receipts.
+- Used local offline automatic recognition as a listening aid. Its output contains substantial mathematical-word errors and is explicitly unverified; it is not a substitute for listening or approved captions.
+- Integrated locally hosted MP4 review copies into the site; added explicit review status, interactive-animation links and print-safe video links.
+- See verification media JSON and CCT_PROGRESS_REPORT.md for actual final file measurements and acceptance limits. This log is not evidence of a teacher meeting, student parameter-edit exercise, presentation or submission.
+
+
+## 2026-11-08 — v2 recording replacement
+
+Imported the user-supplied 7.4new.m4a, retained the 26.1-second beat without changing speech rate or truncating the recording, and remastered the Jeff audio track. Retained original visual stream and all cue boundaries. The first production copy and ZIP remain unchanged, and the earlier 7.4 raw copy is preserved in audio/history/. Complete decode and browser playback receipts were regenerated. A Chinese human-review page supports timestamp jumping, local saving and JSON export; its records are explicitly human-entered and are bound to the new recording hash. No teacher feedback or final teacher grade is claimed.
+
+
+## 2026-11-08 — Alan scenes 1–3 denoising
+
+Processed the 13 beats through 332.633333 s from the v2 mastered narration, using per-recording non-speech noise estimates and moderate phase-preserving spectral attenuation. Chose the moderate candidate after comparing noise reduction and strong-speech energy. Preserved all later PCM samples before AAC encoding; verified the video stream is unchanged, Jeff media is unchanged, and the complete Alan MP4 decodes. A/B samples and scope measurements are in verification/alan-scenes123-denoise.json. Original files and v2 remain unchanged.
+
+
+## 2026-11-08 — v4 bottom-banner removal
+
+Removed the normal narration review-label drawing block from shared/engine.js. For the existing exported narration videos, restored the blank 1008–1064 px margin using a clean same-frame edge strip, preserving the opening vertical gradient and leaving the 1074 px progress line outside the edit. Re-encoded video at 1080p/30 fps, copying the encoded audio without re-encoding. Earlier versions remain unchanged. Current verification receipts describe full decode, frame-count, audio-stream identity and banner-band checks.
+
+
+## 2026-11-08 — Integrated website branch prepared for GitHub
+
+Prepared the user-approved website on a separate branch based on verified origin/main 67dd196. Included both approved MP4s without changing bytes, current PDF, direct HTML players, chapter links, Rubric mapping and editable source. Raw recordings and intermediate exports remain local. GitHub main and the desktop checkout are preserved. Upload and PR status are reported separately after remote verification.
