@@ -2,6 +2,8 @@
 
 Topic C website by Alan and Jeff. Open **index.html** for the integrated course: four lessons, two recorded video lessons, four homework sets, three assessments and a final unit test, with 43 typed step-by-step solutions.
 
+**Current status:** [PROJECT_STATUS.json](PROJECT_STATUS.json) and [current progress report](videos/CCT_PROGRESS_REPORT.md). The user accepted the November 9 audio revision. Earlier progress/acceptance documents are archived rather than used as current status.
+
 ## Watch and study
 
 - **Alan:** [Differentiability and Motion](videos/exports/alan-narrated-review.mp4), 13:58.8.
@@ -29,6 +31,6 @@ Raw voice recordings, historical video exports and intermediate production files
 
 ## Acceptance limits
 
-Local playback, chapter seeking, static HTML fallback, 390/1440-pixel layouts and the 32-page PDF were checked. All 43 solution first steps are present in the PDF; 34 tests passed. These checks do not constitute teacher approval or a grade. Complete human listening review, genuine student response evidence, teacher-conference feedback and independent hosted-site access remain pending. See `rubric-check.html` and `FINAL_ACCEPTANCE.md`.
+Local playback, chapter seeking, static HTML fallback, 390/1440-pixel layouts and the 32-page PDF were checked. All 43 solution first steps are present in the PDF; 34 tests passed. These checks do not constitute teacher approval or a grade. Complete human review of spoken mathematical accuracy, genuine student response evidence, teacher-conference feedback and independent hosted-site access remain pending. See `rubric-check.html` and `FINAL_ACCEPTANCE.md`.
 
-The upload is on a separate branch for review. It does not publish GitHub Pages or merge into main.
+The current delivery is on `codex/cct-audio-refresh-20261109`, tracked by [review request #4](https://github.com/Mrgaols/MCV4U_CCT/pull/4). It does not publish GitHub Pages or merge into main. The original CLAUDE.md is a production brief; PROJECT_STATUS.json describes the current state.

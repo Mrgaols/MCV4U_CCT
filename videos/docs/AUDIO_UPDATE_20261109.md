@@ -1,6 +1,6 @@
 # Recording and pacing update — 2026-11-09
 
-Alan 1.1–1.4 and 2.1–2.6 use the ten new numbered takes supplied in Alan/alan radio. Other speech is retained. The previous complete version and all raw recordings remain preserved locally. No student voice was synthesized or imitated.
+Alan 1.1–1.4 and 2.1–2.6 use the ten new numbered takes supplied in Alan/alan radio. Other speech is retained. The user accepted the revised audio and transition treatment in chat on November 9. The previous complete version and all raw recordings remain preserved locally. No student voice was synthesized or imitated.
 
 For both lessons, only leading and trailing non-speech outside a conservative speech envelope was trimmed. Internal pauses were retained. Padding keeps approximately 0.34–0.37 seconds between beats and 0.52–0.55 seconds between scenes. Eight-millisecond edge fades reduce clicks. New Alan takes were gain-matched, and final mastering includes peak protection. Detected spoken samples are neither overlapped nor time-stretched.
 

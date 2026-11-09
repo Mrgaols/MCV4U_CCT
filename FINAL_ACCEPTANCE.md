@@ -1,37 +1,23 @@
-# Audio update — 2026-11-09
+# Current acceptance — 2026-11-09
 
-Alan recordings 1.1–2.6 are replaced by the ten newly supplied takes. Scene 3 retains the previously approved noise reduction; later Alan scenes and all Jeff speech retain their supplied recordings. Both lessons have shorter leading/trailing clip silence and smooth edge fades. Internal pauses, speech speed and speaker identity are preserved. Video beat timing and chapter links are updated. Earlier versions and all raw takes remain preserved.
+**The user accepted the revised audio and transitions. Local technical production is verified; final teacher/Rubric acceptance remains partial.** No teacher-awarded mark or completed school submission is claimed.
 
-Current durations: Alan 13:58.8; Jeff 12:53.7. Historical durations, audio-identity and denoising statements below describe earlier versions, not the current export. The human-evidence Rubric limits remain unchanged.
+Alan now uses the ten new takes for scenes 1–2 and retains the approved denoising in scene 3. Both videos have shorter recording-boundary pauses and gentle fades, with unchanged speech speed. Actual exported durations are Alan **838.779 seconds** and Jeff **773.746 seconds**. Both exceed eight minutes. The website, chapter cues and 32-page PDF are synchronized.
 
----
+| Original Rubric criterion | Maximum | Current evidence and limit |
+|---|---:|---|
+| Video Lesson Content | 15 | Required models and applications supplied; 34 mathematics/timeline tests pass. Complete spoken-content review remains unconfirmed; Jeff 7.4 has an unverified wording flag. |
+| Web page Sequencing and Content | 15 | Four ordered modules, worked examples, embedded videos and practice links; local navigation passes. Independent hosted access pending. |
+| Homework | 10 | Four sets, 18 typed solutions and extension problems. Actual learner preparation outcomes not observed. |
+| Effectiveness | 10 | Animated relationships, prediction prompts, graph readouts and instant feedback supplied. Real learner understanding not established. |
+| Organization | 10 | Structured navigation, linked homework, chapter jumps and downloadable PDF; local checks pass. |
+| Delivery and Timing | 10 | Both real narrated videos exceed eight minutes; user accepted current audio treatment. Diction, mathematical vocabulary, use of notes and complete delivery still require observation. |
+| Assessments (2) | 20 | Three assessments plus final; all K/A/T/C categories represented; 25 assessment questions with typed solutions. Genuine student samples not supplied or verified. |
+| Conference — anecdotal evidence and feedback | 10 | Preparation material supplied; no actual teacher-conference feedback record supplied. |
+| **Total maximum** | **100** | **Not scored; not finally teacher-accepted.** |
 
-# 最终本地交付版验收说明
+The Guidelines require at least three assessments plus a final; this project supplies that count even though the Rubric row is labelled “Assessments (2)”. The Level 4 assessment descriptor includes actual student samples. Model solutions and blank response sheets are not student evidence.
 
-用户已确认当前降噪效果；两段视频底部提示条已移除。以下 Rubric 未完项继续如实保留，未因交付文件命名为 Final 而变更。
+Both partners still need genuine contribution and explainability evidence, the required classroom presentation and any teacher confirmation of the animation format. Public hosting, independent access testing and actual URL/PDF submission are not verified by uploading a Git branch.
 
-# Audio-quality update v3
-
-Alan scenes 1–3 have been denoised. All mathematical and human-evidence acceptance states from v2 remain unchanged.
-
-# Current acceptance v2
-
-The new 7.4 recording has been imported and technically validated. Its mathematical wording remains for listening review; the user reports no teacher feedback is currently available.
-
-Local technical production is ready for review. Final teacher/Rubric acceptance remains partial.
-
-## Original Rubric acceptance — maxima verified, current grade not assigned
-
-| Original criterion | Maximum | Acceptance state | Evidence / remaining requirement |
-|---|---:|---|---|
-| Video Lesson Content | 15 | PARTIAL | Main model calculations and visual corrections verified; spoken mathematical content needs complete listening and Jeff 7.4 resolution |
-| Web page Sequencing and Content | 15 | PARTIAL | Four lessons and linked recorded/interactive lessons; local navigation passes; final reviewed teaching version and external delivery pending |
-| Homework | 10 | STRUCTURE PASS; pedagogical attainment pending | Four sets, 18 typed solutions, including extension tasks; no learner-preparation outcome demonstrated |
-| Effectiveness | 10 | PARTIAL | Meaningful animated demonstrations and prediction prompts exist; complete learner understanding has not been observed |
-| Organization | 10 | LOCAL TECHNICAL PASS | Structured topics, working local links, source guides and efficient section navigation; this is not a teacher-awarded Level 4 |
-| Delivery and Timing | 10 | PARTIAL | Both real recorded files exceed eight minutes and have measured audio; diction, use of notes and engaging delivery require observation |
-| Assessments (2) | 20 | PARTIAL | Three assessments plus final, all with KATC and 43 total worked solutions across practice/tests; genuine student samples and effectiveness evidence absent |
-| Conference — anecdotal evidence and feedback | 10 | PENDING | No actual teacher-conference record supplied; a preparation guide is provided |
-| **Total maximum** | **100** | **NOT FINALLY ACCEPTED / NOT SCORED** | No numerical grade, predicted grade or claim of teacher approval |
-
-The Rubric row reads Assessments (2), while the Guidelines require at least three assessments plus a final; the project provides three plus the final, satisfying the larger count. The Rubric's Level 4 assessment descriptor explicitly includes student samples. Typed model solutions alone do not meet that additional evidence requirement.
+Current source of truth: `PROJECT_STATUS.json`, `videos/CCT_PROGRESS_REPORT.md`, current media checks and `rubric-check.html`. Earlier acceptance documents are preserved under `videos/docs/history/20261109-before-information-sync/`.

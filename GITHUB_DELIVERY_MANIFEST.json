@@ -1,6 +1,6 @@
 {
   "base_commit": "6214b8004710eeb0378db56bc4212f6932ecdc22",
-  "revision": "audio-20261109",
+  "revision": "audio-20261109-information-sync",
   "entries": [
     {
       "path": ".gitattributes",
@@ -29,8 +29,8 @@
     },
     {
       "path": "FINAL_ACCEPTANCE.md",
-      "size_bytes": 3404,
-      "sha256": "15e999657021be0e3438d01875a93db3d610cc8ab71f465d8d2a26fabc1fe725"
+      "size_bytes": 2925,
+      "sha256": "b57157f5a211eda9d9f58f1bf17a8894b5b66d46b7b876127ff8b37ab945d89a"
     },
     {
       "path": "index.html",
@@ -43,9 +43,14 @@
       "sha256": "2a8949cfaff66a56137de2699ebccc42139ce35818569e090ae53aa28da71f44"
     },
     {
+      "path": "PROJECT_STATUS.json",
+      "size_bytes": 2867,
+      "sha256": "fb500abd9836fdf60022d7c235434cc23040ff0c1a6c020eb4d56e0de4fed095"
+    },
+    {
       "path": "README.md",
-      "size_bytes": 3131,
-      "sha256": "903b7a2c74aea5cfffa6913337a6400c87a1a7a686017c3127998c92e8a6f1c2"
+      "size_bytes": 3603,
+      "sha256": "2f713b4be533afd35ea40aac2b16f6eca4ca66eaed48a1b80277389001c0112e"
     },
     {
       "path": "rubric-check.html",
@@ -89,8 +94,8 @@
     },
     {
       "path": "videos/CCT_PROGRESS_REPORT.md",
-      "size_bytes": 12087,
-      "sha256": "b62638b16c3a143ed10e50926cfad5dea632d487af3456f906c19fd42fb182be"
+      "size_bytes": 3300,
+      "sha256": "b60e57856792f6762510f32b79aff2eb7d905e8d30fe1bc9144ef8ceb4324979"
     },
     {
       "path": "videos/docs/alan-recording-cues.csv",
@@ -99,13 +104,13 @@
     },
     {
       "path": "videos/docs/ALAN_DENOISE_V3.md",
-      "size_bytes": 3119,
-      "sha256": "d636083541b9ebe40211230439b634be4d937cd93299884673d8c6106a968f56"
+      "size_bytes": 1015,
+      "sha256": "d8c3657982b299623bc3b0d06ede24c9d998c37e7f1488e982942dbff877670e"
     },
     {
       "path": "videos/docs/AUDIO_UPDATE_20261109.md",
-      "size_bytes": 2062,
-      "sha256": "b3ca34d9c2abb0e7227e2c52706041f4b0ec3d78dc282057d2f01852b1deb0e6"
+      "size_bytes": 2146,
+      "sha256": "eed8adf007becba6804e35618bd73c607d9a37fb827277a329b96c42299b8261"
     },
     {
       "path": "videos/docs/CLASS_PRESENTATION_AND_FEEDBACK.md",
@@ -121,6 +126,26 @@
       "path": "videos/docs/historical-progress-2026-11-02.md",
       "size_bytes": 9083,
       "sha256": "34af5c9d70718b92e6dabb3b095d0e7c3fb24d9597e876bb8f1780a4aeba138a"
+    },
+    {
+      "path": "videos/docs/history/20261109-before-information-sync/FINAL_ACCEPTANCE.md",
+      "size_bytes": 3404,
+      "sha256": "15e999657021be0e3438d01875a93db3d610cc8ab71f465d8d2a26fabc1fe725"
+    },
+    {
+      "path": "videos/docs/history/20261109-before-information-sync/videos/CCT_PROGRESS_REPORT.md",
+      "size_bytes": 12087,
+      "sha256": "b62638b16c3a143ed10e50926cfad5dea632d487af3456f906c19fd42fb182be"
+    },
+    {
+      "path": "videos/docs/history/20261109-before-information-sync/videos/docs/ALAN_DENOISE_V3.md",
+      "size_bytes": 3119,
+      "sha256": "d636083541b9ebe40211230439b634be4d937cd93299884673d8c6106a968f56"
+    },
+    {
+      "path": "videos/docs/history/20261109-before-information-sync/videos/docs/RECORDING_REVIEW.md",
+      "size_bytes": 3857,
+      "sha256": "f65785e0573de22c42962d70042f51c2ded3180b89d1acdb30d06febba5f20bb"
     },
     {
       "path": "videos/docs/jeff-recording-cues.csv",
@@ -139,8 +164,8 @@
     },
     {
       "path": "videos/docs/RECORDING_REVIEW.md",
-      "size_bytes": 3857,
-      "sha256": "f65785e0573de22c42962d70042f51c2ded3180b89d1acdb30d06febba5f20bb"
+      "size_bytes": 2106,
+      "sha256": "ff86fe3e58bb93be17edfe6348c3e38c6c7e92cc47db2282dc77b5e9634f3f03"
     },
     {
       "path": "videos/docs/speaking-notes-alan.md",
@@ -343,6 +368,11 @@
       "sha256": "804c1a3b6db1987ef61cfe43bb8919aca17a3fd98538b2377d2a46b004b812d6"
     },
     {
+      "path": "videos/verification/alan-narration-cues.json",
+      "size_bytes": 12176,
+      "sha256": "e0ecc1cb7915a488187f135079b135c94896e9877597848c8d213f4d6199d9c5"
+    },
+    {
       "path": "videos/verification/audio-edit-quality-20261109.json",
       "size_bytes": 387,
       "sha256": "d208e7286de9869ec2826af1e0179ac357f9af8e788b3de9ec76726610e2a229"
@@ -354,8 +384,13 @@
     },
     {
       "path": "videos/verification/banner-removal-results.json",
-      "size_bytes": 2845,
-      "sha256": "8d4eace1e39d6290b518c4598fe4df8a583ce37caf39c40368095a1007fcacea"
+      "size_bytes": 3037,
+      "sha256": "5944f50ced39e5def87638902a021f3a265cf25624dfcf3812154bc724a16891"
+    },
+    {
+      "path": "videos/verification/final-receipt.json",
+      "size_bytes": 2953,
+      "sha256": "aff33640c253057a605d2da7ab3eb6b552c1b8742cd651c5c32c274e26e4eee3"
     },
     {
       "path": "videos/verification/jeff/box.png",
@@ -411,6 +446,11 @@
       "path": "videos/verification/jeff-narrated-media.json",
       "size_bytes": 7203,
       "sha256": "569cd96f7e971a466a16441eb4123c1545bde9efc972933f1fe65a026688bb66"
+    },
+    {
+      "path": "videos/verification/jeff-narration-cues.json",
+      "size_bytes": 12769,
+      "sha256": "f4216d6a2bc954025b09bef2b5921d2c2600b092bb835f1fb26501b2bf9153d0"
     },
     {
       "path": "videos/verification/requirements-audit.json",
