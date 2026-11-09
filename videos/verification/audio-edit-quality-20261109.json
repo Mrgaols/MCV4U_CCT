@@ -1,0 +1,16 @@
+{
+  "alan": {
+    "duration": 838.779,
+    "beat_alignment_passed": 36,
+    "max_lag_seconds": 0.0,
+    "min_waveform_correlation": 0.9909076471293348,
+    "peak_dbfs": -1.9654223918914795
+  },
+  "jeff": {
+    "duration": 773.746,
+    "beat_alignment_passed": 38,
+    "max_lag_seconds": 0.0,
+    "min_waveform_correlation": 0.9972299333630023,
+    "peak_dbfs": -1.7877624034881592
+  }
+}

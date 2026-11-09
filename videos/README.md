@@ -1,6 +1,6 @@
 # Video lessons
 
-The approved narrated MP4s are included in `exports/` and embedded in the root website. Alan is 15:29.8, Jeff is 13:59.6; both are 1920×1080 at 30 fps and include the supplied student recordings. The bottom review banner is removed. Alan scenes 1–3 retain the approved noise reduction.
+The approved narrated MP4s are included in `exports/` and embedded in the root website. Alan is 13:58.8, Jeff is 12:53.7; both are 1920×1080 at 30 fps and include the supplied student recordings. The bottom review banner is removed. Alan scenes 1–2 now use the ten new supplied recordings; scene 3 retains the approved noise reduction. Both videos have shorter boundary silence, with no speech overlap or change of speech rate.
 
 The editable interactive lessons remain at `alan/index.html` and `jeff/index.html`. Their default silent timelines are 11:10 each. `?narration=1` selects recording-adjusted visual timings but does not itself play audio; use the MP4s for synchronized picture and sound.
 

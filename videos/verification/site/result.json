@@ -6,27 +6,27 @@
   "duplicateIds": [],
   "finalQ10Fixed": true,
   "videoNotes": [
-    "Alan \u00b7 15:30 \u00b7 Recorded English narration",
+    "Alan \u00b7 13:59 \u00b7 Recorded English narration",
     "Open video in a separate tabExplore the interactive animation",
     "Next: Homework 1Homework 2Assessment 1",
-    "Jeff \u00b7 14:00 \u00b7 Recorded English narration",
+    "Jeff \u00b7 12:54 \u00b7 Recorded English narration",
     "Open video in a separate tabExplore the interactive animation",
     "Next: Homework 3Homework 4Assessment 2",
     "Mathematical clarification: The drug-model domain [0, \u221e) is closed but unbounded. The closed-and-bounded interval form of EVT does not apply. Instead, C\u2032 changes from positive to negative at t = 2, C(0) = 0, and C(t) \u2192 0 as t \u2192 \u221e; the absolute maximum is 2.5 mg/L at 2 hours."
   ],
   "figures": 14,
-  "servedUrl": "[local checkout]/index.html",
+  "servedUrl": "[local preview]/",
   "chapterSeeking": [
     {
       "presenter": "alan",
-      "expected": 78.567,
-      "actual": 78.567,
+      "expected": 62.5,
+      "actual": 62.5,
       "passed": true
     },
     {
       "presenter": "jeff",
-      "expected": 66.567,
-      "actual": 66.566998,
+      "expected": 59.133333,
+      "actual": 59.133333,
       "passed": true
     }
   ],
@@ -43,14 +43,14 @@
   "media": [
     {
       "src": "Alan narrated lesson",
-      "duration": 929.8,
+      "duration": 838.779,
       "width": 1920,
       "height": 1080,
       "playback": true
     },
     {
       "src": "Jeff narrated lesson",
-      "duration": 839.6,
+      "duration": 773.746,
       "width": 1920,
       "height": 1080,
       "playback": true
@@ -62,5 +62,5 @@
     "videoCount": "2",
     "solutionCount": 43
   },
-  "local_file_url_redacted": true
+  "local_preview_url_redacted": true
 }

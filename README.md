@@ -2,14 +2,16 @@
 
 Topic C website by Alan and Jeff. Open **index.html** for the integrated course: four lessons, two recorded video lessons, four homework sets, three assessments and a final unit test, with 43 typed step-by-step solutions.
 
+**Current status:** [PROJECT_STATUS.json](PROJECT_STATUS.json) and [current progress report](videos/CCT_PROGRESS_REPORT.md). The user accepted the November 9 audio revision. Earlier progress/acceptance documents are archived rather than used as current status.
+
 ## Watch and study
 
-- **Alan:** [Differentiability and Motion](videos/exports/alan-narrated-review.mp4), 15:29.8.
-- **Jeff:** [Extreme Values and Optimization](videos/exports/jeff-narrated-review.mp4), 13:59.6.
+- **Alan:** [Differentiability and Motion](videos/exports/alan-narrated-review.mp4), 13:58.8.
+- **Jeff:** [Extreme Values and Optimization](videos/exports/jeff-narrated-review.mp4), 12:53.7.
 - [Complete website PDF](MCV4U-CCT-website.pdf), 32 pages.
 - [Requirements and Rubric checklist](rubric-check.html).
 
-Both MP4s are checked into this branch and embedded directly in the HTML. The players do not require JavaScript to appear. Chapter links, separate MP4 links, interactive animations and linked practice are included. The review suffix in filenames is retained to preserve links; there is no review banner in either video. Alan scenes 1–3 use the user-approved noise reduction. Jeff uses the latest supplied 7.4 recording.
+Both MP4s are checked into this branch and embedded directly in the HTML. The players do not require JavaScript to appear. Chapter links, separate MP4 links, interactive animations and linked practice are included. The review suffix in filenames is retained to preserve links; there is no review banner in either video. Alan scenes 1–2 use the ten newly supplied 2026-11-09 recordings; scene 3 retains the approved noise reduction. Jeff retains the supplied updated 7.4 recording. Both lessons have shorter clip-boundary silence and gentle edge fades; internal pauses and speech speed remain intact.
 
 ## Run locally
 
@@ -29,6 +31,6 @@ Raw voice recordings, historical video exports and intermediate production files
 
 ## Acceptance limits
 
-Local playback, chapter seeking, static HTML fallback, 390/1440-pixel layouts and the 32-page PDF were checked. All 43 solution first steps are present in the PDF; 34 tests passed. These checks do not constitute teacher approval or a grade. Complete human listening review, genuine student response evidence, teacher-conference feedback and independent hosted-site access remain pending. See `rubric-check.html` and `FINAL_ACCEPTANCE.md`.
+Local playback, chapter seeking, static HTML fallback, 390/1440-pixel layouts and the 32-page PDF were checked. All 43 solution first steps are present in the PDF; 34 tests passed. These checks do not constitute teacher approval or a grade. Complete human review of spoken mathematical accuracy, genuine student response evidence, teacher-conference feedback and independent hosted-site access remain pending. See `rubric-check.html` and `FINAL_ACCEPTANCE.md`.
 
-The upload is on a separate branch for review. It does not publish GitHub Pages or merge into main.
+The current delivery is on `codex/cct-audio-refresh-20261109`, tracked by [review request #4](https://github.com/Mrgaols/MCV4U_CCT/pull/4). It does not publish GitHub Pages or merge into main. The original CLAUDE.md is a production brief; PROJECT_STATUS.json describes the current state.

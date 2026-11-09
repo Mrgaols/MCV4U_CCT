@@ -1,0 +1,479 @@
+{
+  "date": "2026-11-09",
+  "source_folder": "user-supplied Alan/alan radio; exact numbered takes 1.1\u20132.6",
+  "lessons": {
+    "alan": {
+      "duration_seconds": 838.7666666666665,
+      "previous_duration_seconds": 929.7666666666665,
+      "replacement_keys": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ],
+      "gap_seconds_min": 0.34000000000000297,
+      "gap_seconds_max": 0.5479999999999992,
+      "gaps": [
+        {
+          "after": "1.1",
+          "before": "1.2",
+          "gap_seconds": 0.35666666666666763,
+          "scene_change": false
+        },
+        {
+          "after": "1.2",
+          "before": "1.3",
+          "gap_seconds": 0.3639999999999992,
+          "scene_change": false
+        },
+        {
+          "after": "1.3",
+          "before": "1.4",
+          "gap_seconds": 0.3533333333333325,
+          "scene_change": false
+        },
+        {
+          "after": "1.4",
+          "before": "2.1",
+          "gap_seconds": 0.5479999999999992,
+          "scene_change": true
+        },
+        {
+          "after": "2.1",
+          "before": "2.2",
+          "gap_seconds": 0.3426666666666659,
+          "scene_change": false
+        },
+        {
+          "after": "2.2",
+          "before": "2.3",
+          "gap_seconds": 0.36800000000000277,
+          "scene_change": false
+        },
+        {
+          "after": "2.3",
+          "before": "2.4",
+          "gap_seconds": 0.36266666666666586,
+          "scene_change": false
+        },
+        {
+          "after": "2.4",
+          "before": "2.5",
+          "gap_seconds": 0.3453333333333325,
+          "scene_change": false
+        },
+        {
+          "after": "2.5",
+          "before": "2.6",
+          "gap_seconds": 0.3639999999999992,
+          "scene_change": false
+        },
+        {
+          "after": "2.6",
+          "before": "3.1",
+          "gap_seconds": 0.5239999999999994,
+          "scene_change": true
+        },
+        {
+          "after": "3.1",
+          "before": "3.2",
+          "gap_seconds": 0.3599999999999992,
+          "scene_change": false
+        },
+        {
+          "after": "3.2",
+          "before": "3.3",
+          "gap_seconds": 0.3653333333333325,
+          "scene_change": false
+        },
+        {
+          "after": "3.3",
+          "before": "4.1",
+          "gap_seconds": 0.5266666666666624,
+          "scene_change": true
+        },
+        {
+          "after": "4.1",
+          "before": "4.2",
+          "gap_seconds": 0.3519999999999993,
+          "scene_change": false
+        },
+        {
+          "after": "4.2",
+          "before": "4.3",
+          "gap_seconds": 0.35199999999999587,
+          "scene_change": false
+        },
+        {
+          "after": "4.3",
+          "before": "4.4",
+          "gap_seconds": 0.3666666666666659,
+          "scene_change": false
+        },
+        {
+          "after": "4.4",
+          "before": "5.1",
+          "gap_seconds": 0.5239999999999991,
+          "scene_change": true
+        },
+        {
+          "after": "5.1",
+          "before": "5.2",
+          "gap_seconds": 0.35466666666666596,
+          "scene_change": false
+        },
+        {
+          "after": "5.2",
+          "before": "5.3",
+          "gap_seconds": 0.3479999999999993,
+          "scene_change": false
+        },
+        {
+          "after": "5.3",
+          "before": "5.4",
+          "gap_seconds": 0.3453333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "5.4",
+          "before": "6.1",
+          "gap_seconds": 0.526666666666666,
+          "scene_change": true
+        },
+        {
+          "after": "6.1",
+          "before": "6.2",
+          "gap_seconds": 0.352000000000001,
+          "scene_change": false
+        },
+        {
+          "after": "6.2",
+          "before": "7.1",
+          "gap_seconds": 0.538666666666666,
+          "scene_change": true
+        },
+        {
+          "after": "7.1",
+          "before": "7.2",
+          "gap_seconds": 0.36266666666666253,
+          "scene_change": false
+        },
+        {
+          "after": "7.2",
+          "before": "7.3",
+          "gap_seconds": 0.3626666666666695,
+          "scene_change": false
+        },
+        {
+          "after": "7.3",
+          "before": "7.4",
+          "gap_seconds": 0.36533333333333273,
+          "scene_change": false
+        },
+        {
+          "after": "7.4",
+          "before": "8.1",
+          "gap_seconds": 0.5426666666666659,
+          "scene_change": true
+        },
+        {
+          "after": "8.1",
+          "before": "8.2",
+          "gap_seconds": 0.34000000000000297,
+          "scene_change": false
+        },
+        {
+          "after": "8.2",
+          "before": "8.3",
+          "gap_seconds": 0.36933333333333274,
+          "scene_change": false
+        },
+        {
+          "after": "8.3",
+          "before": "8.4",
+          "gap_seconds": 0.35999999999999577,
+          "scene_change": false
+        },
+        {
+          "after": "8.4",
+          "before": "9.1",
+          "gap_seconds": 0.542666666666666,
+          "scene_change": true
+        },
+        {
+          "after": "9.1",
+          "before": "9.2",
+          "gap_seconds": 0.3573333333333363,
+          "scene_change": false
+        },
+        {
+          "after": "9.2",
+          "before": "9.3",
+          "gap_seconds": 0.3653333333333344,
+          "scene_change": false
+        },
+        {
+          "after": "9.3",
+          "before": "10.1",
+          "gap_seconds": 0.5439999999999992,
+          "scene_change": true
+        },
+        {
+          "after": "10.1",
+          "before": "10.2",
+          "gap_seconds": 0.36400000000000277,
+          "scene_change": false
+        }
+      ],
+      "speech_speed_changed": false,
+      "internal_pauses_removed": false,
+      "speech_overlap": false,
+      "method": "Trim only leading/trailing non-speech outside a conservative VAD envelope; retain 140 ms before and 200 ms after detected speech, add 180 ms at scene changes, align to 30 fps, use 8 ms edge fades and matched-picture edits. New Alan clips use unchanged speech rate and conservative gain matching."
+    },
+    "jeff": {
+      "duration_seconds": 773.7333333333333,
+      "previous_duration_seconds": 839.5666666666668,
+      "replacement_keys": [],
+      "gap_seconds_min": 0.3400000000000011,
+      "gap_seconds_max": 0.5426666666666661,
+      "gaps": [
+        {
+          "after": "1.1",
+          "before": "1.2",
+          "gap_seconds": 0.3633333333333343,
+          "scene_change": false
+        },
+        {
+          "after": "1.2",
+          "before": "1.3",
+          "gap_seconds": 0.36133333333333606,
+          "scene_change": false
+        },
+        {
+          "after": "1.3",
+          "before": "2.1",
+          "gap_seconds": 0.5386666666666661,
+          "scene_change": true
+        },
+        {
+          "after": "2.1",
+          "before": "2.2",
+          "gap_seconds": 0.35466666666666763,
+          "scene_change": false
+        },
+        {
+          "after": "2.2",
+          "before": "2.3",
+          "gap_seconds": 0.3439999999999992,
+          "scene_change": false
+        },
+        {
+          "after": "2.3",
+          "before": "2.4",
+          "gap_seconds": 0.3653333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "2.4",
+          "before": "3.1",
+          "gap_seconds": 0.5213333333333326,
+          "scene_change": true
+        },
+        {
+          "after": "3.1",
+          "before": "3.2",
+          "gap_seconds": 0.3493333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "3.2",
+          "before": "3.3",
+          "gap_seconds": 0.3493333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "3.3",
+          "before": "3.4",
+          "gap_seconds": 0.3519999999999993,
+          "scene_change": false
+        },
+        {
+          "after": "3.4",
+          "before": "3.5",
+          "gap_seconds": 0.36533333333333273,
+          "scene_change": false
+        },
+        {
+          "after": "3.5",
+          "before": "3.6",
+          "gap_seconds": 0.3413333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "3.6",
+          "before": "4.1",
+          "gap_seconds": 0.5253333333333325,
+          "scene_change": true
+        },
+        {
+          "after": "4.1",
+          "before": "4.2",
+          "gap_seconds": 0.3493333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "4.2",
+          "before": "4.3",
+          "gap_seconds": 0.3413333333333325,
+          "scene_change": false
+        },
+        {
+          "after": "4.3",
+          "before": "5.1",
+          "gap_seconds": 0.5359999999999956,
+          "scene_change": true
+        },
+        {
+          "after": "5.1",
+          "before": "5.2",
+          "gap_seconds": 0.3426666666666661,
+          "scene_change": false
+        },
+        {
+          "after": "5.2",
+          "before": "5.3",
+          "gap_seconds": 0.3426666666666659,
+          "scene_change": false
+        },
+        {
+          "after": "5.3",
+          "before": "5.4",
+          "gap_seconds": 0.3586666666666661,
+          "scene_change": false
+        },
+        {
+          "after": "5.4",
+          "before": "5.5",
+          "gap_seconds": 0.3693333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "5.5",
+          "before": "5.6",
+          "gap_seconds": 0.34933333333333616,
+          "scene_change": false
+        },
+        {
+          "after": "5.6",
+          "before": "6.1",
+          "gap_seconds": 0.5199999999999994,
+          "scene_change": true
+        },
+        {
+          "after": "6.1",
+          "before": "6.2",
+          "gap_seconds": 0.3679999999999992,
+          "scene_change": false
+        },
+        {
+          "after": "6.2",
+          "before": "6.3",
+          "gap_seconds": 0.35599999999999943,
+          "scene_change": false
+        },
+        {
+          "after": "6.3",
+          "before": "6.4",
+          "gap_seconds": 0.3439999999999993,
+          "scene_change": false
+        },
+        {
+          "after": "6.4",
+          "before": "6.5",
+          "gap_seconds": 0.3586666666666624,
+          "scene_change": false
+        },
+        {
+          "after": "6.5",
+          "before": "6.6",
+          "gap_seconds": 0.34933333333333616,
+          "scene_change": false
+        },
+        {
+          "after": "6.6",
+          "before": "7.1",
+          "gap_seconds": 0.5359999999999994,
+          "scene_change": true
+        },
+        {
+          "after": "7.1",
+          "before": "7.2",
+          "gap_seconds": 0.3613333333333325,
+          "scene_change": false
+        },
+        {
+          "after": "7.2",
+          "before": "7.3",
+          "gap_seconds": 0.3400000000000011,
+          "scene_change": false
+        },
+        {
+          "after": "7.3",
+          "before": "7.4",
+          "gap_seconds": 0.36400000000000277,
+          "scene_change": false
+        },
+        {
+          "after": "7.4",
+          "before": "7.5",
+          "gap_seconds": 0.3413333333333326,
+          "scene_change": false
+        },
+        {
+          "after": "7.5",
+          "before": "8.1",
+          "gap_seconds": 0.534666666666666,
+          "scene_change": true
+        },
+        {
+          "after": "8.1",
+          "before": "8.2",
+          "gap_seconds": 0.34000000000000274,
+          "scene_change": false
+        },
+        {
+          "after": "8.2",
+          "before": "8.3",
+          "gap_seconds": 0.37066666666666775,
+          "scene_change": false
+        },
+        {
+          "after": "8.3",
+          "before": "9.1",
+          "gap_seconds": 0.5426666666666661,
+          "scene_change": true
+        },
+        {
+          "after": "9.1",
+          "before": "9.2",
+          "gap_seconds": 0.3680000000000029,
+          "scene_change": false
+        }
+      ],
+      "speech_speed_changed": false,
+      "internal_pauses_removed": false,
+      "speech_overlap": false,
+      "method": "Trim only leading/trailing non-speech outside a conservative VAD envelope; retain 140 ms before and 200 ms after detected speech, add 180 ms at scene changes, align to 30 fps, use 8 ms edge fades and matched-picture edits. New Alan clips use unchanged speech rate and conservative gain matching."
+    }
+  },
+  "original_recordings_preserved": true,
+  "previous_versions_preserved": true,
+  "voice_synthesis_used": false,
+  "mastering": "192 kbps AAC with final peak protection; validated after decode"
+}

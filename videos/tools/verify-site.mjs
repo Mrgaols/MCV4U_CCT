@@ -126,7 +126,7 @@ try {
   for (const who of ['alan','jeff']) {
     const result=await site.evaluate(`(async()=>{
       const video=document.getElementById('player-${who}');
-      const link=document.querySelector('[data-video="player-${who}"][data-time]:not([data-time="0.0"]):not([data-time="0"])');
+      const link=[...document.querySelectorAll('[data-video="player-${who}"][data-time]')].find(link=>Number(link.dataset.time)>0);
       const expected=Number(link.dataset.time);
       const seeked=new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error('Chapter seek timed out')),10000);video.addEventListener('seeked',()=>{clearTimeout(timer);resolve();},{once:true});});
       link.click();await seeked;video.pause();

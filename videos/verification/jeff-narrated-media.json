@@ -1,0 +1,273 @@
+{
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "773.732357",
+        "nb_frames": "23212",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "duration": "773.746000",
+        "nb_frames": "36267"
+      }
+    ],
+    "format": {
+      "duration": "773.746000"
+    }
+  },
+  "mastering_first_pass": {
+    "input_i": "-16.34",
+    "input_tp": "-1.56",
+    "input_lra": "2.60",
+    "input_thresh": "-26.72",
+    "output_i": "-16.03",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-26.39",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "full_decode": "passed",
+  "revision": "audio-20261109",
+  "speech_alignment_per_beat": [
+    {
+      "key": "1.1",
+      "speech_waveform_correlation": 0.9972299333630023,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "1.2",
+      "speech_waveform_correlation": 0.9997523769085644,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "1.3",
+      "speech_waveform_correlation": 0.9992990766475628,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "2.1",
+      "speech_waveform_correlation": 0.9993556461265379,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "2.2",
+      "speech_waveform_correlation": 0.9994905113235077,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "2.3",
+      "speech_waveform_correlation": 0.9996694923649689,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "2.4",
+      "speech_waveform_correlation": 0.9996960256483884,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.1",
+      "speech_waveform_correlation": 0.9998119685935788,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.2",
+      "speech_waveform_correlation": 0.9995857303773272,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.3",
+      "speech_waveform_correlation": 0.9999760049691239,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.4",
+      "speech_waveform_correlation": 0.9996806771914173,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.5",
+      "speech_waveform_correlation": 0.9995679187774681,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "3.6",
+      "speech_waveform_correlation": 0.9996566424162708,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "4.1",
+      "speech_waveform_correlation": 0.9995697137160865,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "4.2",
+      "speech_waveform_correlation": 0.9999747324504995,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "4.3",
+      "speech_waveform_correlation": 0.999946588254959,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.1",
+      "speech_waveform_correlation": 0.9994529274138584,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.2",
+      "speech_waveform_correlation": 0.999204747467923,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.3",
+      "speech_waveform_correlation": 0.9994965090642232,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.4",
+      "speech_waveform_correlation": 0.9996859576877779,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.5",
+      "speech_waveform_correlation": 0.999386263091055,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "5.6",
+      "speech_waveform_correlation": 0.9994809837171611,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.1",
+      "speech_waveform_correlation": 0.9995375996718064,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.2",
+      "speech_waveform_correlation": 0.999376159665456,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.3",
+      "speech_waveform_correlation": 0.9995334778329632,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.4",
+      "speech_waveform_correlation": 0.9994677518458056,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.5",
+      "speech_waveform_correlation": 0.9995441332394945,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "6.6",
+      "speech_waveform_correlation": 0.9994288167244005,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "7.1",
+      "speech_waveform_correlation": 0.999318001049299,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "7.2",
+      "speech_waveform_correlation": 0.9994840372989638,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "7.3",
+      "speech_waveform_correlation": 0.9994199777294305,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "7.4",
+      "speech_waveform_correlation": 0.9996209330390801,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "7.5",
+      "speech_waveform_correlation": 0.9996546545979074,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "8.1",
+      "speech_waveform_correlation": 0.9995807616597834,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "8.2",
+      "speech_waveform_correlation": 0.9995179758911096,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "8.3",
+      "speech_waveform_correlation": 0.9994357320883536,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "9.1",
+      "speech_waveform_correlation": 0.9996688261801774,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    },
+    {
+      "key": "9.2",
+      "speech_waveform_correlation": 0.9994117857965371,
+      "lag_seconds": 0.0,
+      "detected_speech_envelope_retained": true
+    }
+  ],
+  "final_peak_dbfs": -1.7877624034881592
+}
