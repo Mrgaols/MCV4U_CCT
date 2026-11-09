@@ -1,5 +1,6 @@
 {
-  "base_commit": "67dd1961238202d3ab723f62ba23c1d3b81267dc",
+  "base_commit": "6214b8004710eeb0378db56bc4212f6932ecdc22",
+  "revision": "audio-20261109",
   "entries": [
     {
       "path": ".gitattributes",
@@ -23,38 +24,38 @@
     },
     {
       "path": "CLAUDE.md",
-      "size_bytes": 18308,
-      "sha256": "0d30104c53df128332955caea57f88a9f83ac294b66432e4d3ebe5544a18a8e2"
+      "size_bytes": 18309,
+      "sha256": "03cef2420d1da4d63d422d0408f2da79085193439d4e16f33b4728b8ccddceb7"
     },
     {
       "path": "FINAL_ACCEPTANCE.md",
-      "size_bytes": 2701,
-      "sha256": "2790bda6a1b762822bd8a5e12628f06a0ce6cbecbba7ee28c1894934841a22d0"
+      "size_bytes": 3404,
+      "sha256": "15e999657021be0e3438d01875a93db3d610cc8ab71f465d8d2a26fabc1fe725"
     },
     {
       "path": "index.html",
-      "size_bytes": 164185,
-      "sha256": "3838ac8b7f38797753c182a069b392a0aecf1aa45686c1b7ff210031e91016a5"
+      "size_bytes": 164329,
+      "sha256": "ed9a7a056d7325475b8e10fc0556fe42fc44eedeb840182806f41a587b8b2314"
     },
     {
       "path": "MCV4U-CCT-website.pdf",
-      "size_bytes": 981152,
-      "sha256": "b1836a33c5d0c9d27649eb348f70b87f5aed6f1f4824a06aaa3bf1b5b2c1bc68"
+      "size_bytes": 983212,
+      "sha256": "2a8949cfaff66a56137de2699ebccc42139ce35818569e090ae53aa28da71f44"
     },
     {
       "path": "README.md",
-      "size_bytes": 2951,
-      "sha256": "f672a0af6e05076760be0eb1e12f499980a12ea159ade33bd5fadd381da3104c"
+      "size_bytes": 3131,
+      "sha256": "903b7a2c74aea5cfffa6913337a6400c87a1a7a686017c3127998c92e8a6f1c2"
     },
     {
       "path": "rubric-check.html",
-      "size_bytes": 4622,
-      "sha256": "f381dc4831d6a36e08059d128ca7211ef8ae86a154d7a5168b8960d3d47bfd4c"
+      "size_bytes": 4693,
+      "sha256": "9f37f7394a714944fe1f455e9c66b7ca903ae576c59110f9add86a9036929f51"
     },
     {
       "path": "student-response.html",
-      "size_bytes": 1998,
-      "sha256": "d65e487d1c12e034b98f43db51651ff7e44f2e5055a9c9adf800779ed3f240e4"
+      "size_bytes": 1999,
+      "sha256": "d2ad42c87d69f58167259042e71a658f11d2f48c69c81235248ab436140fe0de"
     },
     {
       "path": "videos/.gitignore",
@@ -73,8 +74,8 @@
     },
     {
       "path": "videos/alan/narration-timing.js",
-      "size_bytes": 11549,
-      "sha256": "2848940db6e0b3b42d914d107fd108e1a46532cfdec81fa65cdbdf7b3c8948da"
+      "size_bytes": 13013,
+      "sha256": "f0c2de26702e2a62cd51fe8795a55d027b637a169ab1446fade31a91fcf1a916"
     },
     {
       "path": "videos/alan/scenes.js",
@@ -88,18 +89,23 @@
     },
     {
       "path": "videos/CCT_PROGRESS_REPORT.md",
-      "size_bytes": 10089,
-      "sha256": "e4f7521154da1a852ea1c2bffea06dee9d8cb845e049bea83c91b832f30689d0"
+      "size_bytes": 12087,
+      "sha256": "b62638b16c3a143ed10e50926cfad5dea632d487af3456f906c19fd42fb182be"
     },
     {
       "path": "videos/docs/alan-recording-cues.csv",
-      "size_bytes": 1707,
-      "sha256": "a034e079467c46f355148c54b573fdc651a23e48fece9c404dc0e27e9d292dab"
+      "size_bytes": 1686,
+      "sha256": "4c579ba2372926b8ec594d16b4cd4e88a0c276da26b99c96ece07c0f5bcb3783"
     },
     {
       "path": "videos/docs/ALAN_DENOISE_V3.md",
-      "size_bytes": 2416,
-      "sha256": "e499140a35e0bd96d345caec8b1fc31bb2f69ecf53859db0ffe3e984a8479f3a"
+      "size_bytes": 3119,
+      "sha256": "d636083541b9ebe40211230439b634be4d937cd93299884673d8c6106a968f56"
+    },
+    {
+      "path": "videos/docs/AUDIO_UPDATE_20261109.md",
+      "size_bytes": 2062,
+      "sha256": "b3ca34d9c2abb0e7227e2c52706041f4b0ec3d78dc282057d2f01852b1deb0e6"
     },
     {
       "path": "videos/docs/CLASS_PRESENTATION_AND_FEEDBACK.md",
@@ -118,8 +124,8 @@
     },
     {
       "path": "videos/docs/jeff-recording-cues.csv",
-      "size_bytes": 1720,
-      "sha256": "5a75fef27a6693f2c93ff114db135d7fcd9ca373895e80ad76813fff93ae8a37"
+      "size_bytes": 1712,
+      "sha256": "cbdd2291d09e09e0ef21b3546d5bb01c39174bdefc553dde700f703559daca8f"
     },
     {
       "path": "videos/docs/math-checks.md",
@@ -128,13 +134,13 @@
     },
     {
       "path": "videos/docs/production-log.md",
-      "size_bytes": 12511,
-      "sha256": "7f7ec5809fdedf701e478bf077686f028e9a2074982f0fa10ecc5591c9039ef6"
+      "size_bytes": 14575,
+      "sha256": "73acb086479e03c2b6096b4cae1efa7486580d5933ea314696e66f928dd08608"
     },
     {
       "path": "videos/docs/RECORDING_REVIEW.md",
-      "size_bytes": 3856,
-      "sha256": "fa8840f2891ca74d319924b722adb223990c392522e0d93d0ddb5a7da010f82c"
+      "size_bytes": 3857,
+      "sha256": "f65785e0573de22c42962d70042f51c2ded3180b89d1acdb30d06febba5f20bb"
     },
     {
       "path": "videos/docs/speaking-notes-alan.md",
@@ -158,13 +164,13 @@
     },
     {
       "path": "videos/exports/alan-narrated-review.mp4",
-      "size_bytes": 48603019,
-      "sha256": "1e0d914bbdc7fac9073e95a78817106e199a50283a2ea47e1bcd8dd89d3c9a9e"
+      "size_bytes": 48826867,
+      "sha256": "b239b0b35f5f3c357e3fcfb385036bec2d58490f8e1ec32b7f4ab23dd96931bc"
     },
     {
       "path": "videos/exports/jeff-narrated-review.mp4",
-      "size_bytes": 41865031,
-      "sha256": "d785c67b3c918996eaec0d8a99a57bcf532f09beab7b61f8d4bf437e12a25fba"
+      "size_bytes": 42232225,
+      "sha256": "de3b9735d6ac8ffbf0c34c5796803718d91ddbf0dabecc18cfe394fd5e907af4"
     },
     {
       "path": "videos/jeff/index.html",
@@ -178,8 +184,8 @@
     },
     {
       "path": "videos/jeff/narration-timing.js",
-      "size_bytes": 12028,
-      "sha256": "f0c7b68dcf512c0fbef2b1c42001c229afafdbbf3ec244db39317eb3627ced05"
+      "size_bytes": 13604,
+      "sha256": "9846097f5bb9674d589dd0bba099b48d04ecfcb24d7fa071ae1a9866b78e6f78"
     },
     {
       "path": "videos/jeff/scenes.js",
@@ -193,8 +199,8 @@
     },
     {
       "path": "videos/README.md",
-      "size_bytes": 898,
-      "sha256": "52866fd8b0cdc47d2c1716e049fb3d54169f6cf879fca57fc482d7c6224d51f9"
+      "size_bytes": 1040,
+      "sha256": "dd3da254b9f5e7e43915e9210842660dbc8dda366fe705f5cc906393d3858933"
     },
     {
       "path": "videos/shared/draw.js",
@@ -273,8 +279,8 @@
     },
     {
       "path": "videos/tools/verify-site.mjs",
-      "size_bytes": 12217,
-      "sha256": "82dc677885a048526050e0ba9a0647faeaefb95c2e7235c55cd7fcd35d13ca2d"
+      "size_bytes": 12221,
+      "sha256": "9b35eaeb57b2c2d90e1ae5736d16a58c0f3e6b788549427e65dd2c1f6119f167"
     },
     {
       "path": "videos/verification/alan/bridge.png",
@@ -318,8 +324,8 @@
     },
     {
       "path": "videos/verification/alan/result.json",
-      "size_bytes": 400,
-      "sha256": "591860d42be60b96146d3867186e5f150c9c0d0951c08a50ff30e2a54120cba6"
+      "size_bytes": 401,
+      "sha256": "b4585503192e8e57de6669ea1ff47d2fe3bf9f7b6862b43e1e8d56e9a41634bd"
     },
     {
       "path": "videos/verification/alan/secant.png",
@@ -332,9 +338,24 @@
       "sha256": "8603a64ccb1174fa40dadf547f5ff2b09f3ac8a18ee2b88844a42f0b624ecc74"
     },
     {
+      "path": "videos/verification/alan-narrated-media.json",
+      "size_bytes": 6882,
+      "sha256": "804c1a3b6db1987ef61cfe43bb8919aca17a3fd98538b2377d2a46b004b812d6"
+    },
+    {
+      "path": "videos/verification/audio-edit-quality-20261109.json",
+      "size_bytes": 387,
+      "sha256": "d208e7286de9869ec2826af1e0179ac357f9af8e788b3de9ec76726610e2a229"
+    },
+    {
+      "path": "videos/verification/audio-refresh-20261109.json",
+      "size_bytes": 12730,
+      "sha256": "7f4f466d1b09608cf66c4674bea01a97d07e8e5e633f7c8278da882e716358c9"
+    },
+    {
       "path": "videos/verification/banner-removal-results.json",
-      "size_bytes": 2844,
-      "sha256": "29fa12c63a0ca9a2f6487370e961827e7602fd3adf37771c4a724f477ccbfe51"
+      "size_bytes": 2845,
+      "sha256": "8d4eace1e39d6290b518c4598fe4df8a583ce37caf39c40368095a1007fcacea"
     },
     {
       "path": "videos/verification/jeff/box.png",
@@ -373,8 +394,8 @@
     },
     {
       "path": "videos/verification/jeff/result.json",
-      "size_bytes": 399,
-      "sha256": "f1403ff0ed9dc20311590e1591d0426e2dd7ff6bbb4eb8b6e3a24c0a11712842"
+      "size_bytes": 400,
+      "sha256": "f2fc0908e9017f7d823f459c742c7f2e808f79d44ad1e28eac40602d73cb4639"
     },
     {
       "path": "videos/verification/jeff/tests.png",
@@ -387,24 +408,29 @@
       "sha256": "e757fb1277995bc282948c3a8192cf43eed14c8e10e89a375d80ba08ce68e6a1"
     },
     {
+      "path": "videos/verification/jeff-narrated-media.json",
+      "size_bytes": 7203,
+      "sha256": "569cd96f7e971a466a16441eb4123c1545bde9efc972933f1fe65a026688bb66"
+    },
+    {
       "path": "videos/verification/requirements-audit.json",
-      "size_bytes": 1307,
-      "sha256": "1f7e394c439541b4bf86aeb5ab6c7faed3173a9a51bf15bc5f868b6e50868bd4"
+      "size_bytes": 1308,
+      "sha256": "db349b1c875ffc8cff939da1525e17036009aaec047db826f841f04565d90eac"
     },
     {
       "path": "videos/verification/site/homepage.png",
-      "size_bytes": 86260,
-      "sha256": "1b224f1534b01d0bc13be21e85ea116450ed3fc3084bbcfde696eb02b831b63d"
+      "size_bytes": 97804,
+      "sha256": "288e77a0ba005c0a3cfc8f8b2f3a480b6b3e90396f7ecb3778741f511b6d02d5"
     },
     {
       "path": "videos/verification/site/result.json",
-      "size_bytes": 1839,
-      "sha256": "161421e772d29ce57d84800aedc4bc12e760cb2fa09f0108e332a0ff1a8b7ba9"
+      "size_bytes": 1834,
+      "sha256": "28a77c60166a74f811706bc99ad613d037805e0bd8585bbfdbe40ac1110fd135"
     },
     {
       "path": "videos/verification/site/video-lessons.png",
-      "size_bytes": 86055,
-      "sha256": "2dca6f21349697f91fea262d4c2dca0430eea0040406c46280277042e61bebae"
+      "size_bytes": 90758,
+      "sha256": "0b728e40d04fb2c134c2dbfacd6138f4349c19b08064e8a42eeee5c09e3fc7b8"
     }
   ]
 }

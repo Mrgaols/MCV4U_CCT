@@ -1,3 +1,11 @@
+# Audio update — 2026-11-09
+
+Alan recordings 1.1–2.6 are replaced by the ten newly supplied takes. Scene 3 retains the previously approved noise reduction; later Alan scenes and all Jeff speech retain their supplied recordings. Both lessons have shorter leading/trailing clip silence and smooth edge fades. Internal pauses, speech speed and speaker identity are preserved. Video beat timing and chapter links are updated. Earlier versions and all raw takes remain preserved.
+
+Current durations: Alan 13:58.8; Jeff 12:53.7. Historical durations, audio-identity and denoising statements below describe earlier versions, not the current export. The human-evidence Rubric limits remain unchanged.
+
+---
+
 # 最终本地交付版验收说明
 
 用户已确认当前降噪效果；两段视频底部提示条已移除。以下 Rubric 未完项继续如实保留，未因交付文件命名为 Final 而变更。

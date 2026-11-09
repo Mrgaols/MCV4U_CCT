@@ -4,12 +4,12 @@ Topic C website by Alan and Jeff. Open **index.html** for the integrated course:
 
 ## Watch and study
 
-- **Alan:** [Differentiability and Motion](videos/exports/alan-narrated-review.mp4), 15:29.8.
-- **Jeff:** [Extreme Values and Optimization](videos/exports/jeff-narrated-review.mp4), 13:59.6.
+- **Alan:** [Differentiability and Motion](videos/exports/alan-narrated-review.mp4), 13:58.8.
+- **Jeff:** [Extreme Values and Optimization](videos/exports/jeff-narrated-review.mp4), 12:53.7.
 - [Complete website PDF](MCV4U-CCT-website.pdf), 32 pages.
 - [Requirements and Rubric checklist](rubric-check.html).
 
-Both MP4s are checked into this branch and embedded directly in the HTML. The players do not require JavaScript to appear. Chapter links, separate MP4 links, interactive animations and linked practice are included. The review suffix in filenames is retained to preserve links; there is no review banner in either video. Alan scenes 1–3 use the user-approved noise reduction. Jeff uses the latest supplied 7.4 recording.
+Both MP4s are checked into this branch and embedded directly in the HTML. The players do not require JavaScript to appear. Chapter links, separate MP4 links, interactive animations and linked practice are included. The review suffix in filenames is retained to preserve links; there is no review banner in either video. Alan scenes 1–2 use the ten newly supplied 2026-11-09 recordings; scene 3 retains the approved noise reduction. Jeff retains the supplied updated 7.4 recording. Both lessons have shorter clip-boundary silence and gentle edge fades; internal pauses and speech speed remain intact.
 
 ## Run locally
 

@@ -1,89 +1,89 @@
-// Generated from measured supplied clips. Original timing.js is preserved.
+// Recording-adjusted timing; edge silence shortened, speech speed unchanged.
 window.AlanNarrationTiming = [
   {
     "scene": "hook",
     "beats": {
-      "title": 18.166666666666668,
-      "twoV": 17.066666666666666,
-      "zoom": 19.7,
-      "question": 23.633333333333333
+      "title": 12.466666666666667,
+      "twoV": 10.7,
+      "zoom": 16.833333333333332,
+      "question": 22.5
     }
   },
   {
     "scene": "secant",
     "beats": {
-      "setup": 16.3,
-      "secant": 35.06666666666667,
-      "shrink": 28.233333333333334,
-      "left": 20.3,
-      "algebra": 36.96666666666667,
-      "tangent": 25.266666666666666
+      "setup": 11.766666666666667,
+      "secant": 33.2,
+      "shrink": 26.666666666666668,
+      "left": 15.833333333333334,
+      "algebra": 29.9,
+      "tangent": 19.5
     }
   },
   {
     "scene": "microscope",
     "beats": {
-      "lensSmooth": 32.1,
-      "lensCorner": 25.0,
-      "oneSided": 34.833333333333336
+      "lensSmooth": 28.2,
+      "lensCorner": 22.733333333333334,
+      "oneSided": 32.36666666666667
     }
   },
   {
     "scene": "gallery",
     "beats": {
-      "grid": 16.4,
-      "secants": 40.1,
-      "logic": 24.233333333333334,
-      "verdict": 22.8
+      "grid": 14.4,
+      "secants": 39.2,
+      "logic": 21.966666666666665,
+      "verdict": 21.9
     }
   },
   {
     "scene": "piecewise",
     "beats": {
-      "setup": 17.0,
-      "continuity": 19.033333333333335,
-      "pivot": 31.933333333333334,
-      "solve": 29.1
+      "setup": 14.466666666666667,
+      "continuity": 17.5,
+      "pivot": 31.033333333333335,
+      "solve": 27.566666666666666
     }
   },
   {
     "scene": "bridge",
     "beats": {
-      "morph": 14.6,
-      "message": 13.066666666666666
+      "morph": 12.8,
+      "message": 11.066666666666666
     }
   },
   {
     "scene": "motion",
     "beats": {
-      "setup": 35.93333333333333,
-      "run": 26.7,
-      "rest": 20.9,
-      "read": 24.933333333333334
+      "setup": 34.666666666666664,
+      "run": 25.066666666666666,
+      "rest": 18.733333333333334,
+      "read": 23.166666666666668
     }
   },
   {
     "scene": "speed",
     "beats": {
-      "chart": 41.4,
-      "replay": 18.933333333333334,
-      "predict": 34.233333333333334,
-      "rule": 22.533333333333335
+      "chart": 38.9,
+      "replay": 16.433333333333334,
+      "predict": 32.2,
+      "rule": 20.766666666666666
     }
   },
   {
     "scene": "distance",
     "beats": {
-      "legs": 31.4,
-      "compare": 17.0,
-      "method": 31.666666666666668
+      "legs": 29.733333333333334,
+      "compare": 14.733333333333333,
+      "method": 30.4
     }
   },
   {
     "scene": "recap",
     "beats": {
-      "cards": 46.93333333333333,
-      "next": 16.3
+      "cards": 45.1,
+      "next": 14.3
     }
   }
 ];
@@ -93,359 +93,395 @@ window.CCTNarrationCues = [
     "scene": "hook",
     "beat": "title",
     "start": 0,
-    "end": 18.166666666666668,
-    "duration": 18.166666666666668,
+    "end": 12.466666666666667,
+    "duration": 12.466666666666667,
     "missing": false,
-    "source_sha256": "14830d860f494021fc7e930ff3cb52dd2824663d1d7b5f4622c11fb9c4b4ffd6"
+    "source_sha256": "0154a193fbdfbf86b6a7e9dd05679d49a4440d09bb3d202c20301f569d6b867e",
+    "recording_replaced_20261109": true
   },
   {
     "key": "1.2",
     "scene": "hook",
     "beat": "twoV",
-    "start": 18.166666666666668,
-    "end": 35.233333333333334,
-    "duration": 17.066666666666666,
+    "start": 12.466666666666667,
+    "end": 23.166666666666664,
+    "duration": 10.7,
     "missing": false,
-    "source_sha256": "8508f1eb63ea8610ae554b303e72a4a695d7c7533d0575f1a8c21c69d0300284"
+    "source_sha256": "3a6a3d4b46664a9877077c6c3f9489dbdfd6f781f3472800a8681e2ee389f6ec",
+    "recording_replaced_20261109": true
   },
   {
     "key": "1.3",
     "scene": "hook",
     "beat": "zoom",
-    "start": 35.233333333333334,
-    "end": 54.93333333333334,
-    "duration": 19.7,
+    "start": 23.166666666666664,
+    "end": 40.0,
+    "duration": 16.833333333333332,
     "missing": false,
-    "source_sha256": "168f0c45fda463ea2ae94d49257821fbb12f4b6ee020db241a0989fc87563056"
+    "source_sha256": "084451a0e6f09b7fd524c2b620b93be4c42e3e6b3484b66decce492735b197b3",
+    "recording_replaced_20261109": true
   },
   {
     "key": "1.4",
     "scene": "hook",
     "beat": "question",
-    "start": 54.93333333333334,
-    "end": 78.56666666666666,
-    "duration": 23.633333333333333,
+    "start": 40.0,
+    "end": 62.5,
+    "duration": 22.5,
     "missing": false,
-    "source_sha256": "250cf4cb7900365130ff20ebae950e018e59a67bfdd9f46826253de4f6340788"
+    "source_sha256": "7483e7dfab559d15c6a2c627f7069ce4543c8e8e3aef5586d552a1fc69c9ad23",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.1",
     "scene": "secant",
     "beat": "setup",
-    "start": 78.56666666666666,
-    "end": 94.86666666666666,
-    "duration": 16.3,
+    "start": 62.5,
+    "end": 74.26666666666667,
+    "duration": 11.766666666666667,
     "missing": false,
-    "source_sha256": "d6aa55a9cd8e5c0c5cd51d496587641d1cac1f840b5195743594bb850bb5fe81"
+    "source_sha256": "7c2ff638a6766f539d00b98313bc83c0d1e5d31b18f220a1855c4fe953a26b66",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.2",
     "scene": "secant",
     "beat": "secant",
-    "start": 94.86666666666666,
-    "end": 129.93333333333334,
-    "duration": 35.06666666666667,
+    "start": 74.26666666666667,
+    "end": 107.46666666666667,
+    "duration": 33.2,
     "missing": false,
-    "source_sha256": "fc8e0ebf03bc023d042aaf10a0dc75606021335ee41c6ec1d821c8c52c2e06be"
+    "source_sha256": "ccc2909e2240bfc067f991f2401adee3aa6113beb8ab7dff2378c207256ef3c7",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.3",
     "scene": "secant",
     "beat": "shrink",
-    "start": 129.93333333333334,
-    "end": 158.16666666666669,
-    "duration": 28.233333333333334,
+    "start": 107.46666666666667,
+    "end": 134.13333333333333,
+    "duration": 26.666666666666668,
     "missing": false,
-    "source_sha256": "2ae0e4544b30674a84e51c579889c0aa92b4faade04e8e4dbbe7c1c923b08078"
+    "source_sha256": "0c71cb7cc089bd832b8f24cc2ef5f2129bb408e3037c8a009004ad34a2e92ac4",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.4",
     "scene": "secant",
     "beat": "left",
-    "start": 158.16666666666669,
-    "end": 178.4666666666667,
-    "duration": 20.3,
+    "start": 134.13333333333333,
+    "end": 149.96666666666667,
+    "duration": 15.833333333333334,
     "missing": false,
-    "source_sha256": "d305387a753dbe1c1ebe6f73bfc444ea0cbea6a8ca65bc3c3dc815bad6ee7f97"
+    "source_sha256": "b9951ba7f37c9f507b06f9bda5366797ad048169c9e63903f61173e71caeeaa3",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.5",
     "scene": "secant",
     "beat": "algebra",
-    "start": 178.4666666666667,
-    "end": 215.43333333333337,
-    "duration": 36.96666666666667,
+    "start": 149.96666666666667,
+    "end": 179.86666666666667,
+    "duration": 29.9,
     "missing": false,
-    "source_sha256": "e867a3b66e3eacad4362474bdcdebad544d6935f215b2718a0801130a7a87c23"
+    "source_sha256": "84ef5fa91a0087b7ac64e4976400a1d7998f314fbcf68af30689eacb9ead1ca7",
+    "recording_replaced_20261109": true
   },
   {
     "key": "2.6",
     "scene": "secant",
     "beat": "tangent",
-    "start": 215.43333333333337,
-    "end": 240.70000000000005,
-    "duration": 25.266666666666666,
+    "start": 179.86666666666667,
+    "end": 199.36666666666667,
+    "duration": 19.5,
     "missing": false,
-    "source_sha256": "3e9b03b85af16e24e803ece14b892b76f98209f401c48057c4df157cb1490950"
+    "source_sha256": "3e7b7e0d757397a043cc02bd5ef77d84cb07a048b526120e67b5381a4e1bb43e",
+    "recording_replaced_20261109": true
   },
   {
     "key": "3.1",
     "scene": "microscope",
     "beat": "lensSmooth",
-    "start": 240.70000000000005,
-    "end": 272.80000000000007,
-    "duration": 32.1,
+    "start": 199.36666666666667,
+    "end": 227.56666666666666,
+    "duration": 28.2,
     "missing": false,
-    "source_sha256": "64fcfac16a93a5824a709435bf3144b09a6bf97b8f8f4de83ad206dbbf821e5f"
+    "source_sha256": "64fcfac16a93a5824a709435bf3144b09a6bf97b8f8f4de83ad206dbbf821e5f",
+    "recording_replaced_20261109": false
   },
   {
     "key": "3.2",
     "scene": "microscope",
     "beat": "lensCorner",
-    "start": 272.80000000000007,
-    "end": 297.80000000000007,
-    "duration": 25.0,
+    "start": 227.56666666666666,
+    "end": 250.3,
+    "duration": 22.733333333333334,
     "missing": false,
-    "source_sha256": "b96ea989439791cca23f0e165c4e7ed11769d27c9e08ef8c3061b8e19e52a6fd"
+    "source_sha256": "b96ea989439791cca23f0e165c4e7ed11769d27c9e08ef8c3061b8e19e52a6fd",
+    "recording_replaced_20261109": false
   },
   {
     "key": "3.3",
     "scene": "microscope",
     "beat": "oneSided",
-    "start": 297.80000000000007,
-    "end": 332.6333333333334,
-    "duration": 34.833333333333336,
+    "start": 250.3,
+    "end": 282.6666666666667,
+    "duration": 32.36666666666667,
     "missing": false,
-    "source_sha256": "cf58f52131a3e537d2e36c49d2ea507c25c8294fefd1c97c45f7f8ca09ba3aba"
+    "source_sha256": "cf58f52131a3e537d2e36c49d2ea507c25c8294fefd1c97c45f7f8ca09ba3aba",
+    "recording_replaced_20261109": false
   },
   {
     "key": "4.1",
     "scene": "gallery",
     "beat": "grid",
-    "start": 332.6333333333334,
-    "end": 349.03333333333336,
-    "duration": 16.4,
+    "start": 282.6666666666667,
+    "end": 297.06666666666666,
+    "duration": 14.4,
     "missing": false,
-    "source_sha256": "36f0632164f6bf438b3f513cb3d230ca188c8fe13af2e281cf707a55082ad12e"
+    "source_sha256": "36f0632164f6bf438b3f513cb3d230ca188c8fe13af2e281cf707a55082ad12e",
+    "recording_replaced_20261109": false
   },
   {
     "key": "4.2",
     "scene": "gallery",
     "beat": "secants",
-    "start": 349.03333333333336,
-    "end": 389.1333333333334,
-    "duration": 40.1,
+    "start": 297.06666666666666,
+    "end": 336.26666666666665,
+    "duration": 39.2,
     "missing": false,
-    "source_sha256": "6d6765a7dc3e741c62d898137ce92f3f7ac781c2da5bf3326d33ca970c2d5693"
+    "source_sha256": "6d6765a7dc3e741c62d898137ce92f3f7ac781c2da5bf3326d33ca970c2d5693",
+    "recording_replaced_20261109": false
   },
   {
     "key": "4.3",
     "scene": "gallery",
     "beat": "logic",
-    "start": 389.1333333333334,
-    "end": 413.36666666666673,
-    "duration": 24.233333333333334,
+    "start": 336.26666666666665,
+    "end": 358.2333333333333,
+    "duration": 21.966666666666665,
     "missing": false,
-    "source_sha256": "d29886650795608340a59e82e3df5ef7f2485d6c5cda0d4d6a09de7cbe5b75a2"
+    "source_sha256": "d29886650795608340a59e82e3df5ef7f2485d6c5cda0d4d6a09de7cbe5b75a2",
+    "recording_replaced_20261109": false
   },
   {
     "key": "4.4",
     "scene": "gallery",
     "beat": "verdict",
-    "start": 413.36666666666673,
-    "end": 436.16666666666674,
-    "duration": 22.8,
+    "start": 358.2333333333333,
+    "end": 380.13333333333327,
+    "duration": 21.9,
     "missing": false,
-    "source_sha256": "866bae08fd61e29b14870095787b90d2e443a10ba8ada07294d6ea4ad086c7f9"
+    "source_sha256": "866bae08fd61e29b14870095787b90d2e443a10ba8ada07294d6ea4ad086c7f9",
+    "recording_replaced_20261109": false
   },
   {
     "key": "5.1",
     "scene": "piecewise",
     "beat": "setup",
-    "start": 436.16666666666674,
-    "end": 453.16666666666674,
-    "duration": 17.0,
+    "start": 380.13333333333327,
+    "end": 394.5999999999999,
+    "duration": 14.466666666666667,
     "missing": false,
-    "source_sha256": "9a4baa27b3b04c7d6c2d1d5fd279076822ff33541ab81eb35a43dbc3c7bb7918"
+    "source_sha256": "9a4baa27b3b04c7d6c2d1d5fd279076822ff33541ab81eb35a43dbc3c7bb7918",
+    "recording_replaced_20261109": false
   },
   {
     "key": "5.2",
     "scene": "piecewise",
     "beat": "continuity",
-    "start": 453.16666666666674,
-    "end": 472.2000000000001,
-    "duration": 19.033333333333335,
+    "start": 394.5999999999999,
+    "end": 412.0999999999999,
+    "duration": 17.5,
     "missing": false,
-    "source_sha256": "f42d8b40857d9a08efb201df6b02a1d3764ff337b66ef86430f81d9720b69d59"
+    "source_sha256": "f42d8b40857d9a08efb201df6b02a1d3764ff337b66ef86430f81d9720b69d59",
+    "recording_replaced_20261109": false
   },
   {
     "key": "5.3",
     "scene": "piecewise",
     "beat": "pivot",
-    "start": 472.2000000000001,
-    "end": 504.13333333333344,
-    "duration": 31.933333333333334,
+    "start": 412.0999999999999,
+    "end": 443.13333333333327,
+    "duration": 31.033333333333335,
     "missing": false,
-    "source_sha256": "30fd65da79e4b04a7e2feffd6fb8407eb57ff617ccce79c9650b3231ee7d2b82"
+    "source_sha256": "30fd65da79e4b04a7e2feffd6fb8407eb57ff617ccce79c9650b3231ee7d2b82",
+    "recording_replaced_20261109": false
   },
   {
     "key": "5.4",
     "scene": "piecewise",
     "beat": "solve",
-    "start": 504.13333333333344,
-    "end": 533.2333333333335,
-    "duration": 29.1,
+    "start": 443.13333333333327,
+    "end": 470.69999999999993,
+    "duration": 27.566666666666666,
     "missing": false,
-    "source_sha256": "6020b738b698e46f7b3e1a599f5b8f1e057b3ccf1e8ee0cfd0418ac9b2f0c980"
+    "source_sha256": "6020b738b698e46f7b3e1a599f5b8f1e057b3ccf1e8ee0cfd0418ac9b2f0c980",
+    "recording_replaced_20261109": false
   },
   {
     "key": "6.1",
     "scene": "bridge",
     "beat": "morph",
-    "start": 533.2333333333335,
-    "end": 547.8333333333335,
-    "duration": 14.6,
+    "start": 470.69999999999993,
+    "end": 483.49999999999994,
+    "duration": 12.8,
     "missing": false,
-    "source_sha256": "fce67abbb04faad5d08011fcd15d8a1abd3d20c980dda229fe108d7b66f62f9d"
+    "source_sha256": "fce67abbb04faad5d08011fcd15d8a1abd3d20c980dda229fe108d7b66f62f9d",
+    "recording_replaced_20261109": false
   },
   {
     "key": "6.2",
     "scene": "bridge",
     "beat": "message",
-    "start": 547.8333333333335,
-    "end": 560.9000000000002,
-    "duration": 13.066666666666666,
+    "start": 483.49999999999994,
+    "end": 494.5666666666666,
+    "duration": 11.066666666666666,
     "missing": false,
-    "source_sha256": "ce818d8d4c52b1c8343ad1ba8565d03113473ef9c61580a9286f1b0d7ebbe1fa"
+    "source_sha256": "ce818d8d4c52b1c8343ad1ba8565d03113473ef9c61580a9286f1b0d7ebbe1fa",
+    "recording_replaced_20261109": false
   },
   {
     "key": "7.1",
     "scene": "motion",
     "beat": "setup",
-    "start": 560.9000000000002,
-    "end": 596.8333333333335,
-    "duration": 35.93333333333333,
+    "start": 494.5666666666666,
+    "end": 529.2333333333332,
+    "duration": 34.666666666666664,
     "missing": false,
-    "source_sha256": "1ac350c682a37d62abcc2bbb387115a10197444c8516187fc524ea22c68af194"
+    "source_sha256": "1ac350c682a37d62abcc2bbb387115a10197444c8516187fc524ea22c68af194",
+    "recording_replaced_20261109": false
   },
   {
     "key": "7.2",
     "scene": "motion",
     "beat": "run",
-    "start": 596.8333333333335,
-    "end": 623.5333333333335,
-    "duration": 26.7,
+    "start": 529.2333333333332,
+    "end": 554.3,
+    "duration": 25.066666666666666,
     "missing": false,
-    "source_sha256": "a82d7218b1c45c29641ca082a1f34e0051f09c05ad0f81b0c39550b8061caff2"
+    "source_sha256": "a82d7218b1c45c29641ca082a1f34e0051f09c05ad0f81b0c39550b8061caff2",
+    "recording_replaced_20261109": false
   },
   {
     "key": "7.3",
     "scene": "motion",
     "beat": "rest",
-    "start": 623.5333333333335,
-    "end": 644.4333333333335,
-    "duration": 20.9,
+    "start": 554.3,
+    "end": 573.0333333333333,
+    "duration": 18.733333333333334,
     "missing": false,
-    "source_sha256": "fa101972deefd90647021dbdaddb9d3d338bb494d352e31ee910e323e154a6de"
+    "source_sha256": "fa101972deefd90647021dbdaddb9d3d338bb494d352e31ee910e323e154a6de",
+    "recording_replaced_20261109": false
   },
   {
     "key": "7.4",
     "scene": "motion",
     "beat": "read",
-    "start": 644.4333333333335,
-    "end": 669.3666666666668,
-    "duration": 24.933333333333334,
+    "start": 573.0333333333333,
+    "end": 596.1999999999999,
+    "duration": 23.166666666666668,
     "missing": false,
-    "source_sha256": "591231f92878eb6423665ba2165dde54ca32cae13b05f486ca9bad4f1830f28a"
+    "source_sha256": "591231f92878eb6423665ba2165dde54ca32cae13b05f486ca9bad4f1830f28a",
+    "recording_replaced_20261109": false
   },
   {
     "key": "8.1",
     "scene": "speed",
     "beat": "chart",
-    "start": 669.3666666666668,
-    "end": 710.7666666666668,
-    "duration": 41.4,
+    "start": 596.1999999999999,
+    "end": 635.0999999999999,
+    "duration": 38.9,
     "missing": false,
-    "source_sha256": "7a0d0c0c9212102a34af34e8988dedf393adbe6ff1156393efb594cbe6d744b4"
+    "source_sha256": "7a0d0c0c9212102a34af34e8988dedf393adbe6ff1156393efb594cbe6d744b4",
+    "recording_replaced_20261109": false
   },
   {
     "key": "8.2",
     "scene": "speed",
     "beat": "replay",
-    "start": 710.7666666666668,
-    "end": 729.7,
-    "duration": 18.933333333333334,
+    "start": 635.0999999999999,
+    "end": 651.5333333333332,
+    "duration": 16.433333333333334,
     "missing": false,
-    "source_sha256": "e85bb7351ae9eb5dde7f1acdeaafe94a256ff5a7d9d048d78473d07690a187e3"
+    "source_sha256": "e85bb7351ae9eb5dde7f1acdeaafe94a256ff5a7d9d048d78473d07690a187e3",
+    "recording_replaced_20261109": false
   },
   {
     "key": "8.3",
     "scene": "speed",
     "beat": "predict",
-    "start": 729.7,
-    "end": 763.9333333333334,
-    "duration": 34.233333333333334,
+    "start": 651.5333333333332,
+    "end": 683.7333333333332,
+    "duration": 32.2,
     "missing": false,
-    "source_sha256": "2ac02a9479bc6f84744c39873e9c8982f4d681f0a5f45261f592ec45641b52e9"
+    "source_sha256": "2ac02a9479bc6f84744c39873e9c8982f4d681f0a5f45261f592ec45641b52e9",
+    "recording_replaced_20261109": false
   },
   {
     "key": "8.4",
     "scene": "speed",
     "beat": "rule",
-    "start": 763.9333333333334,
-    "end": 786.4666666666667,
-    "duration": 22.533333333333335,
+    "start": 683.7333333333332,
+    "end": 704.4999999999999,
+    "duration": 20.766666666666666,
     "missing": false,
-    "source_sha256": "b8f359076d1296388a8101bb89834fa06ed114efc8ab75947891ef1d56a401bf"
+    "source_sha256": "b8f359076d1296388a8101bb89834fa06ed114efc8ab75947891ef1d56a401bf",
+    "recording_replaced_20261109": false
   },
   {
     "key": "9.1",
     "scene": "distance",
     "beat": "legs",
-    "start": 786.4666666666667,
-    "end": 817.8666666666667,
-    "duration": 31.4,
+    "start": 704.4999999999999,
+    "end": 734.2333333333332,
+    "duration": 29.733333333333334,
     "missing": false,
-    "source_sha256": "3ed906a91661ed61960e722b5154df6c428eb65b23a5bf84852e0bdc90b9db8e"
+    "source_sha256": "3ed906a91661ed61960e722b5154df6c428eb65b23a5bf84852e0bdc90b9db8e",
+    "recording_replaced_20261109": false
   },
   {
     "key": "9.2",
     "scene": "distance",
     "beat": "compare",
-    "start": 817.8666666666667,
-    "end": 834.8666666666667,
-    "duration": 17.0,
+    "start": 734.2333333333332,
+    "end": 748.9666666666666,
+    "duration": 14.733333333333333,
     "missing": false,
-    "source_sha256": "ada6b6ae2fe5ec6fcd8162661e2221a1816c204fde99538d2ade67e22dc44abe"
+    "source_sha256": "ada6b6ae2fe5ec6fcd8162661e2221a1816c204fde99538d2ade67e22dc44abe",
+    "recording_replaced_20261109": false
   },
   {
     "key": "9.3",
     "scene": "distance",
     "beat": "method",
-    "start": 834.8666666666667,
-    "end": 866.5333333333333,
-    "duration": 31.666666666666668,
+    "start": 748.9666666666666,
+    "end": 779.3666666666666,
+    "duration": 30.4,
     "missing": false,
-    "source_sha256": "6c2ea4d5ef547aeffe85c2166e4db5280f161cea9c0656976f44947d27c8cbaa"
+    "source_sha256": "6c2ea4d5ef547aeffe85c2166e4db5280f161cea9c0656976f44947d27c8cbaa",
+    "recording_replaced_20261109": false
   },
   {
     "key": "10.1",
     "scene": "recap",
     "beat": "cards",
-    "start": 866.5333333333333,
-    "end": 913.4666666666666,
-    "duration": 46.93333333333333,
+    "start": 779.3666666666666,
+    "end": 824.4666666666666,
+    "duration": 45.1,
     "missing": false,
-    "source_sha256": "b3ed7c193aa5d91c1f79531bc9b08f168b86860546832cd665b70382613d67b9"
+    "source_sha256": "b3ed7c193aa5d91c1f79531bc9b08f168b86860546832cd665b70382613d67b9",
+    "recording_replaced_20261109": false
   },
   {
     "key": "10.2",
     "scene": "recap",
     "beat": "next",
-    "start": 913.4666666666666,
-    "end": 929.7666666666665,
-    "duration": 16.3,
+    "start": 824.4666666666666,
+    "end": 838.7666666666665,
+    "duration": 14.3,
     "missing": false,
-    "source_sha256": "28976c8285773bf80b3b97284422f0430347cb150089d726bc29b298fa3ee9c9"
+    "source_sha256": "28976c8285773bf80b3b97284422f0430347cb150089d726bc29b298fa3ee9c9",
+    "recording_replaced_20261109": false
   }
 ];

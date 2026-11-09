@@ -1,3 +1,11 @@
+# Audio update — 2026-11-09
+
+Alan recordings 1.1–2.6 are replaced by the ten newly supplied takes. Scene 3 retains the previously approved noise reduction; later Alan scenes and all Jeff speech retain their supplied recordings. Both lessons have shorter leading/trailing clip silence and smooth edge fades. Internal pauses, speech speed and speaker identity are preserved. Video beat timing and chapter links are updated. Earlier versions and all raw takes remain preserved.
+
+Current durations: Alan 13:58.8; Jeff 12:53.7. Historical durations, audio-identity and denoising statements below describe earlier versions, not the current export. The human-evidence Rubric limits remain unchanged.
+
+---
+
 # Alan scenes 1–3: denoising revision v3
 
 The source is the v2 mastered Alan narration. Original recordings, v2 video and prior archives are preserved. Only the first three scenes are denoised: **13 beats, 0 to 332.633333 seconds**. No recording was shortened, sped up or pitch-shifted.

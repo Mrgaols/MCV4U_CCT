@@ -1,119 +1,97 @@
-# Current delivery — 2026-11-08
+# Audio update — 2026-11-09
 
-The user-approved integrated website now contains two real narrated MP4s (Alan 929.8 s; Jeff 839.6 s), native HTML players, chapter seeking, four homework sets, three assessments and the final unit test. All 43 typed solution first steps were verified in the current 32-page PDF. Alan scenes 1–3 retain approved denoising; Jeff includes the supplied updated 7.4 recording; both bottom banners are removed.
+Alan recordings 1.1–2.6 are replaced by the ten newly supplied takes. Scene 3 retains the previously approved noise reduction; later Alan scenes and all Jeff speech retain their supplied recordings. Both lessons have shorter leading/trailing clip silence and smooth edge fades. Internal pauses, speech speed and speaker identity are preserved. Video beat timing and chapter links are updated. Earlier versions and all raw takes remain preserved.
 
-Local browser playback, chapter seeking, script-disabled player presence, quiz feedback and 390/1440-pixel layouts passed. The 34 mathematical/timeline tests passed. See the root README and rubric-check.html for evidence limits. Actual student response samples, conference feedback, complete human narration listening review and public hosting are not claimed complete. No grade is assigned. This separate-branch delivery does not modify main or activate GitHub Pages.
-
-The original progress document below is historical and predates narration production.
+Current durations: Alan 13:58.8; Jeff 12:53.7. Historical durations, audio-identity and denoising statements below describe earlier versions, not the current export. The human-evidence Rubric limits remain unchanged.
 
 ---
 
-# CCT progress report: animated video lessons
+# Presentation update v4
 
-**Updated:** 2026-11-02, by Claude Code
-**Branch:** `main`. The work was built on a separate `animations` branch and merged into `main` on 2026-11-02 through PR #2 (merge commit cf05c5d), at the user's request. The `animations` branch was then deleted. The MP4 previews are not in the repository; they are on the Mac that made them.
-**Due:** Sunday 2026-11-15, 23:59 (site link + PDF), plus a class presentation
+Removed the bottom NARRATED REVIEW COPY banner from both narrated videos at the user’s request. The strip was confined to the blank margin below the 1000 px content boundary, preserving the vertical title gradient and the bottom progress line. Audio streams are copied without re-encoding. The previous audio and mathematical/Rubric review states below retain their scope; removing a visual label does not change the acceptance record.
 
-This report keeps four states apart:
-1. **code exists**;
-2. **it renders in a browser**;
-3. **a video file has been exported**;
-4. **a student-narrated final video exists**.
+# Audio revision v3
 
-Only the first three are true today.
+Alan scenes 1–3 (13 beats, through 332.633333 s) have been denoised. See docs/ALAN_DENOISE_V3.md for measured scope, A/B samples and limits. All video frames, cue boundaries and Jeff media remain unchanged. Existing mathematical and Rubric review items below retain their status.
 
-## Completed
+# MCV4U CCT — current production and Rubric acceptance v2
 
-Only items with a real file and a record of testing.
+Revision update: the supplied 7.4new.m4a is integrated. Its duration fits the existing 26.1-second beat, so the visual timeline and speech speed remain unchanged. The previous production directory and ZIP are preserved. Offline transcription still reports “not a closed interval”; retain the wording review until the actual sound is checked. The user states no teacher feedback is currently provided.
 
-| Item | Evidence |
-| --- | --- |
-| Shared animation player: timeline, controls, presenter mode, diagnostics, `?t=` / `?scene=` links | `shared/`; 11 tests in `tests/engine.test.mjs`; controls tested in the browser pane (`docs/production-log.md` §3) |
-| Alan's lesson, *Differentiability and Motion*: 10 scenes, 11:10 silent timeline | `alan/`; 53 stills reviewed; console clean |
-| Jeff's lesson, *Extreme Values and Optimization*: 9 scenes, 11:10 silent timeline | `jeff/`; 46 stills reviewed; console clean |
-| Every number on screen checked | 34/34 tests pass (`node --test 'videos/tests/*.test.mjs'`); derivations in `docs/math-checks.md` |
-| Topic C coverage, including one developed example each from design, economics and biological science | Coverage map in `docs/storyboard.md` |
-| Silent technical-preview MP4s exported and measured | `exports/alan-technical-preview.mp4` and `exports/jeff-technical-preview.mp4`. Each measures **670.000 s (11:10)**, 1920×1080, 30 fps, read from the file itself. Frames were decoded and inspected. They are git-ignored, so they exist on this Mac only. Details are in `docs/production-log.md`, "Export results". |
-| Draft English speaking notes, with cues, time markers and a pronunciation table | `docs/speaking-notes-alan.md` (≈1,650 words), `docs/speaking-notes-jeff.md` (≈1,600 words) |
-| Storyboard, student guide, production log, contribution record | `docs/` |
-| One live-demo parameter per student, checked to work | `docs/student-guide.md` §7; the 30 cm box was rendered and checked |
-| Original site untouched | `index.html` is identical to `main` (no diff on this branch) |
+Updated 2026-11-08 (Asia/Shanghai). This report supersedes the inherited November 2 status for this isolated production copy. The teacher awards the grade. This review has not published, pushed, merged, modified GitHub main or submitted the project.
 
-## Pending
+## Overall decision
 
-Real work that is not done yet.
+**Local technical production is complete for review. Final Rubric acceptance is PARTIAL.** Both supplied narration sets are complete and have been integrated. Spoken mathematical accuracy and delivery still require listening and student sign-off; the offline recognizer flags Jeff 7.4 for possible retention of the old unbounded-domain wording. Genuine student assessment samples, teacher-conference evidence and final submission verification remain outstanding.
 
-| Item | Who | Notes |
-| --- | --- | --- |
-| Ask the teacher whether AI-assisted animation is allowed (and whether faces must be shown) | Alan and Jeff | **Not confirmed.** Do this first; it may change everything below. |
-| Get the real rubric | Alan and Jeff | The scores below use `CLAUDE.md`'s copy, which is not verified |
-| Record narration in your own voices | Alan, Jeff | Use Presenter mode and QuickTime (`README.md`) |
-| Final narrated MP4s, each checked to be ≥ 8:00 | Alan, Jeff | Check the length of the real file, e.g. `swiftc -O videos/tools/encode.swift -o /tmp/enc && /tmp/enc --probe your-video.mp4` |
-| Upload the videos and put the links in `VIDEO_LESSONS` (`index.html` line 1570) | Students; Claude Code can do the edit once asked | The site's video stat changes from "0/2" to "2" when both links are filled |
-| Publish the site with a public link | Students to decide | The repo is private and GitHub Pages is off |
-| Export the final PDF of the site after the videos are added; check all 43 solutions print | Students | Chrome → Print → Save as PDF |
-| Class presentation | Alan and Jeff | — |
-| Teacher conference / progress check | Alan and Jeff | Required by the rubric (per `CLAUDE.md`) |
+## Completed — current evidence
 
-## Pending review
+| Item | Verified result | Evidence |
+|---|---|---|
+| Supplied handoff integrity | 53/53 manifest entries match; original extracted files unchanged | Original FILE_MANIFEST.json rechecked during packaging |
+| Selected project | 01_Current_Project; matches the previously inspected upstream baseline in content, plus the original Rubric | verification/source-receipt.json; no fresh remote HEAD claim |
+| Teacher requirements | Original Guidelines and both original Rubric pages read; Rubric rendered and visually inspected | Root teacher PDFs |
+| Mathematics tests | 34 passed, 0 failed on the production copy | verification/test-results.txt |
+| Baseline animation checks | Alan 10 scenes / 108 sampled time points; Jeff 9 / 114; controls and mobile page fit pass, no script errors or sampled off-frame text | verification/alan/result.json; verification/jeff/result.json |
+| Recording-adjusted animation checks | All 19 scenes / 222 sampled beat times checked again against the active recorded timelines | verification/alan-narrated/result.json; verification/jeff-narrated/result.json |
+| Genuine supplied recording files | Alan 36/36 unique clips; Jeff 38/38; all selected raw copies match source hashes | verification/audio-inventory.json; audio/ |
+| Duplicate resolution | Two Jeff 1.1 containers have different bytes but identical decoded sound; selected the already used take and preserved the other container | verification/duplicate-audio-checks.json; audio/duplicates/ |
+| Alan narrated review video | **15:30**, measured 929.800000 s; 1920×1080, 30 fps, H.264 + AAC; full decode and browser playback pass | exports/alan-narrated-review.mp4; verification/alan-narrated-media.json |
+| Jeff narrated review video | **14:00**, measured 839.600000 s; 1920×1080, 30 fps, H.264 + AAC; full decode and browser playback pass; no missing slots | exports/jeff-narrated-review.mp4; verification/jeff-narrated-media.json |
+| Silent technical videos | Two measured 670 s, 1080p, 30 fps baseline previews | exports/*-technical-preview.mp4 |
+| Voice timing and levels | Each recording maps to one beat, original speech rate retained, short beat separation; two-pass loudness mastering around −16 LUFS, measured peaks below 0 dBFS | docs/*-recording-cues.csv; verification/*-audio-mastering.json and *-audio-loudness.txt |
+| Local website integration | Two real MP4s load metadata and play in Chrome; navigation has no missing targets or duplicate IDs; correct/incorrect quiz feedback verified; 1440 px and 390 px page fit | verification/site/result.json and screenshots |
+| PDF review | **30 pages**, all 43 typed Solution blocks, Final Q10 correction and final Q11 present; no outdated missing-recording label | ../MCV4U-CCT-website-review.pdf |
 
-These need a person to check them.
+The initial eight missing Jeff recordings were supplied during this session; that finding is resolved. Earlier incomplete exports are retained outside the deliverable folder and are not the website's current videos.
 
-- **Math.** Each student should re-derive every number in their lesson from `docs/math-checks.md` and sign off in `contribution-record.md`. The automated tests check the code against those derivations; they do not replace a human check. Three examples are new and not on the site, so look at them closely:
-  - Alan's hook curve;
-  - the jump function in Alan's gallery;
-  - Jeff's trail.
-- **Wording of the speaking notes.** They are drafts. Rewrite them so they sound like you, and check that every sentence is mathematically correct the way you say it.
-- **Narration timing.** In Presenter mode the beats wait for you. If you voice over a silent export instead, adjust `timing.js`.
-- **Accessibility.**
-  - The colours were chosen for contrast, and text is 28 px or more on a 1920 × 1080 frame.
-  - There are no captions yet. Consider adding subtitles in iMovie after recording.
-  - Red/green colour-blindness was not tested. Speeding-up and slowing-down bands also carry text labels, so they don't rely on colour alone.
-- **Modelling assumptions.** The drug model and the bird model are labelled illustrative or simplified, and the hypothetical profit curve is labelled hypothetical. Check that the wording is acceptable to the teacher.
-- **KATC adequacy** of the site's assessments against the real rubric. Not checked, because the rubric is missing.
-- **Browsers.** Only Chrome on this Mac was tested. Check Safari or whatever you will record with.
+## Changes made
 
-## Rubric self-assessment
+- Corrected Jeff's description of [0,∞): closed but unbounded. The standard closed, bounded-interval EVT does not apply directly. Preserved the global increasing/decreasing argument for the drug maximum.
+- Made the EVT boundedness condition explicit and included undefined-derivative critical candidates in Jeff's recap. Updated corresponding written notes.
+- Applied Final Q10's correction: derivative sign changes give a sufficient test under its hypotheses, not a universal necessary condition. Included the interior/endpoint distinction and a non-strict extremum counterexample.
+- Preserved original timing.js files; added separate measured narration-timing.js files. Recorded sound has not been sped up to fit the old 11:10 timeline. Individual word-to-reveal alignment still needs human review.
+- Fixed player keyboard handling for focused controls and invalid playback speeds. Adapted the exporter for Windows and added reproducible recording preparation and media validation tools.
+- Integrated the recorded review copies and interactive animation links in the local website. Graph readouts interpolate at the pointer's x and mark sampled values approximate.
+- Improved print spacing, kept teaching cards together and added page numbers. Preserved existing lessons, diagrams, homework and assessments.
 
-> **Not a teacher score.** These categories and maximums come from `CLAUDE.md`. They have **not** been checked against the teacher's rubric, which we don't have. "Now" counts only what can be shown today. Unrecorded narration, presentations and conferences count as zero until they happen. "Possible" is what the category could reach if the pending work is done well.
+## Pending — requirements that cannot be inferred from artifacts
 
-| Category | Max | Now | Possible | Why "now" | Main risk / how to improve |
-| --- | ---: | ---: | ---: | --- | --- |
-| Video Lesson Content | 15 | 5 | 13–14 | Animated content for both lessons exists and is verified, but there is no narrated video lesson yet | Record narration that explains the reasoning, not just the answers |
-| Website Sequencing and Content | 15 | 11 | 13–14 | Four modules in a logical order, with worked examples and 14 figures | Not compared with the textbook; videos not embedded yet |
-| Homework | 10 | 8 | 9 | Four sets, 18 problems, typed step-by-step solutions | The rubric may expect more problems per topic; check it |
-| Teaching Effectiveness | 10 | 3 | 8–9 | The animations are built to teach (predict-then-check moments, misconceptions targeted), but no one has been taught with them yet | Rehearse; test the videos on a classmate |
-| Organization | 10 | 8 | 9 | The site and this folder are organized and documented | Keep `index.html` and the videos in sync at the end |
-| Video Delivery and Timing | 10 | 0 | 8–9 | No narrated video exists | Clear voice, steady pace, ≥ 8:00 checked on the real file |
-| Assessments | 20 | 16 | 18–19 | Three assessments and a final, all KATC-tagged with full solutions | Check the KATC split against the rubric |
-| Conference / Progress and Feedback | 10 | 0 | 7–9 | No record of a teacher conference | Book it; bring this report |
-| **Total** | **100** | **51** | **85–92** | | |
+1. Listen to both complete recorded review copies. Check pronunciation, mathematical meaning, volume and pointing. The offline base-model recognizer produces substantial errors; its transcripts are not approved captions or a verified account of what was said.
+2. In particular, re-listen to Jeff **7.4**. If he says the domain is not closed because it continues forever, record the corrected explanation in docs/RECORDING_REVIEW.md and rebuild that beat/video. The visual correction does not establish that the spoken statement is correct.
+3. Both students complete actual mathematical cross-review and parameter-change/explanation exercises; fill their own contribution records. Supplied audio files do not establish equal contribution to every website feature.
+4. Add genuine student assessment response samples and associated feedback. A model answer or generated example cannot replace the Rubric's student-sample evidence.
+5. Record the actual teacher conference, feedback and any resulting changes. The template is preparation only. The project's unresolved question about the permitted use of assisted animation remains for the teacher to answer; the PDFs themselves do not establish an AI-specific prohibition.
+6. After content/voice review, approve a publication destination, verify the externally accessible URL and videos, regenerate the final website PDF, present the project and submit. Local playback does not verify public availability or submission.
 
-## Quality gates
+## Original Rubric acceptance — maxima verified, current grade not assigned
 
-`PASS` here means the check was carried out. It is not a teacher's judgement.
+| Original criterion | Maximum | Acceptance state | Evidence / remaining requirement |
+|---|---:|---|---|
+| Video Lesson Content | 15 | PARTIAL | Main model calculations and visual corrections verified; spoken mathematical content needs complete listening and Jeff 7.4 resolution |
+| Web page Sequencing and Content | 15 | PARTIAL | Four lessons and linked recorded/interactive lessons; local navigation passes; final reviewed teaching version and external delivery pending |
+| Homework | 10 | STRUCTURE PASS; pedagogical attainment pending | Four sets, 18 typed solutions, including extension tasks; no learner-preparation outcome demonstrated |
+| Effectiveness | 10 | PARTIAL | Meaningful animated demonstrations and prediction prompts exist; complete learner understanding has not been observed |
+| Organization | 10 | LOCAL TECHNICAL PASS | Structured topics, working local links, source guides and efficient section navigation; this is not a teacher-awarded Level 4 |
+| Delivery and Timing | 10 | PARTIAL | Both real recorded files exceed eight minutes and have measured audio; diction, use of notes and engaging delivery require observation |
+| Assessments (2) | 20 | PARTIAL | Three assessments plus final, all with KATC and 43 total worked solutions across practice/tests; genuine student samples and effectiveness evidence absent |
+| Conference — anecdotal evidence and feedback | 10 | PENDING | No actual teacher-conference record supplied; a preparation guide is provided |
+| **Total maximum** | **100** | **NOT FINALLY ACCEPTED / NOT SCORED** | No numerical grade, predicted grade or claim of teacher approval |
 
-| Gate | State | Evidence or reason |
-| --- | --- | --- |
-| Academic accuracy | PARTIAL | 34/34 automated checks pass, and derivations are written up; a human review by the students is still to come |
-| Scene functionality | PASS | All 19 scenes launched and inspected as stills; controls tested in the browser pane; no console errors |
-| Teaching quality | PARTIAL | The storyboard has an objective, an obstacle and a check per scene; not yet tried on a real viewer |
-| Rendering | PASS | Both silent previews were exported, measured from the file (670.000 s each) and decoded frame by frame; Chrome played Alan's. QuickTime playback was not tested. |
-| Human narration | PENDING | No recordings yet |
-| Student explainability | PENDING | The live demos in `student-guide.md` §7 have not been done by the students |
-| Teacher compliance | PARTIAL | Matched to the Guidelines. The rubric is missing, and AI permission has not been asked |
-| Submission | PENDING | No public link; the final PDF is not made; nothing submitted |
+The Rubric row reads Assessments (2), while the Guidelines require at least three assessments plus a final; the project provides three plus the final, satisfying the larger count. The Rubric's Level 4 assessment descriptor explicitly includes student samples. Typed model solutions alone do not meet that additional evidence requirement.
 
-## Human punch list before 2026-11-15
+## Current content inventory
 
-1. Ask the teacher: is AI-assisted animation allowed with our own narration? Do we need to show our faces? Get the rubric.
-2. Each student: re-derive your lesson's numbers (`docs/math-checks.md`) and sign off.
-3. Each student: rewrite your speaking notes, then rehearse once with Presenter mode.
-4. Record the narration. Check that each final file is ≥ 8:00 by measuring the file.
-5. Do your live demo (`student-guide.md` §7) and fill in `contribution-record.md`.
-6. Watch and review each other's video.
-7. Upload both videos and put the links in `VIDEO_LESSONS` in `index.html`.
-8. Publish the site, and test the public link in a private window.
-9. Save the final PDF of the site; check that the solutions and video links appear.
-10. Prepare the class presentation, including how the animations work (`student-guide.md`).
-11. Submit the link and the PDF before Sunday 2026-11-15, 23:59.
+- Four homework sets: 5 + 4 + 5 + 4 = **18** questions, each with a typed worked solution.
+- Three assessments: **5 + 4 + 5 = 14** questions. Their category totals are K3/A8/T4/C3, K2/A5/T4/C3 and K3/A10/T4/C3.
+- Final: **11 questions / 50 marks**, K10/A15/T15/C10, with typed solutions.
+- **43 solution blocks**, 14 instructional figures and three extra instant feedback checks. Counts and tags do not independently establish teaching effectiveness.
+
+## Verification limits
+
+- Browser checks are current Windows Chrome samples; they do not establish every-frame visual inspection or other-browser behavior.
+- Exported MP4s were decoded in full and sampled frames inspected. Content review is not a claim that a person watched and listened to every second.
+- The original recordings are preserved in audio/. Mastering changes level, channel layout and encoding, without voice synthesis or speech-speed changes. Small terminal AAC padding is measured in media receipts; it is not cumulative beat drift.
+- The separate original ChatGPT conversation body remains unavailable through the current Codex interface; this handoff is source material, not a substitute verbatim chat transcript.
+- Historical Mac exports, old estimates such as 51/100, prior classroom activity and earlier Git observations retain their historical scope.
+- Guidelines give Sunday November 15 at 11:59 pm for the website URL and PDF. Confirm any later teacher notice and the teacher's submission timezone.
